@@ -17,7 +17,10 @@ const config: QuartzConfig = {
     },
     locale: "zh-CN",
     baseUrl: "knowhow-ai.vercel.app",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", ".obsidian", ".git", ".claude", ".cursor", ".kiro", ".qoder", ".trae", ".agents"],
+    slugify: {
+        strategy: "simple",
+    },
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
