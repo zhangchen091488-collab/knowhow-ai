@@ -1,7 +1,3 @@
----
-title: "Subagent协作模式"
----
-
 # Subagent协作模式
 
 > Subagent让AI从一个"通才"变成一支"专家团队"，通过多代理协作解决复杂问题。
