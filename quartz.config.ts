@@ -72,6 +72,7 @@ const config: QuartzConfig = {
       Plugin.CrawlLinks({
         markdownLinkResolution: "shortest",
         lazyLoad: false,
+        absoluteURL: "https://knowhow-ai.vercel.app",
       }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),

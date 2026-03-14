@@ -169,7 +169,11 @@ export function pathToRoot(slug: FullSlug): RelativeURL {
 }
 
 export function resolveRelative(current: FullSlug, target: FullSlug | SimpleSlug): RelativeURL {
-  const res = joinSegments(pathToRoot(current), simplifySlug(target as FullSlug)) as RelativeURL
+  let res = joinSegments(pathToRoot(current), simplifySlug(target as FullSlug)) as RelativeURL
+  // Add .html extension for static site generation (when SPA is disabled)
+  if (!res.endsWith('/') && !res.endsWith('.html') && !res.endsWith('.pdf') && !res.startsWith('#')) {
+    res = (res + '.html') as RelativeURL
+  }
   return res
 }
 
