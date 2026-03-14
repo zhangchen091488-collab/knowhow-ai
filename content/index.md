@@ -22,18 +22,20 @@ title: "KnowHowAI"
 
 ### 💠 Cursor AI 编程
 - [[Cursor/00-知识库导航]] - 知识库导航
-- [[Cursor/01-基础]] - 基础篇：入门和基础技巧
-- [[Cursor/02-进阶]] - 进阶篇：高级功能
-- [[Cursor/03-实战]] - 实战篇：项目应用
-- [[Cursor/04-思考]] - 思考篇：方法论
+- [[Cursor/01-基础/01-Cursor 入门]] - Cursor 入门
+- [[Cursor/02-进阶/Skills 体系架构]] - Skills 深度探索
+- [[Cursor/02-进阶/Subagent 协作模式]] - Subagent 协作
+- [[Cursor/03-实战]] - 实战篇
+- [[Cursor/04-思考/内化吸收新技术方法论]] - 学习方法论
 
 ### 🦞 OpenClaw 专区
-- [[06-OpenClaw/00-OpenClaw 文档索引]] - OpenClaw 文档导航
-- [[06-OpenClaw/01-OpenClaw 快速入门]] - 快速安装指南
-- [[06-OpenClaw/02-OpenClaw 安装方法]] - 详细安装方式
-- [[06-OpenClaw/03-OpenClaw 配置指南]] - 配置详解
-- [[06-OpenClaw/04-OpenClaw CLI 参考]] - CLI 工具参考
-- [[06-OpenClaw/05-OpenClaw 架构概念]] - 架构说明
+- [[06-OpenClaw/00-OpenClaw 文档索引]] - 文档导航
+- [[06-OpenClaw/01-OpenClaw 快速入门]] - 快速入门
+- [[06-OpenClaw/02-OpenClaw 安装方法]] - 安装方法
+- [[06-OpenClaw/03-OpenClaw 配置指南]] - 配置指南
+- [[06-OpenClaw/04-OpenClaw CLI 参考]] - CLI 参考
+- [[06-OpenClaw/05-OpenClaw 架构概念]] - 架构概念
+- [[06-OpenClaw/06-OpenClaw 飞书插件使用指南]] - 飞书插件
 
 ---
 
