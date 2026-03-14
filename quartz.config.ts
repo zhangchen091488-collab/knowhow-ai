@@ -8,8 +8,8 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
-    pageTitleSuffix: "",
+    pageTitle: "KnowHowAI",
+    pageTitleSuffix: " - Cursor AI 编程实战指南",
     enableSPA: false,
     enablePopovers: true,
     analytics: {
