@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run quartz build",
+  "buildCommand": "npx quartz build",
   "outputDirectory": "public",
   "installCommand": "npm install"
 }
