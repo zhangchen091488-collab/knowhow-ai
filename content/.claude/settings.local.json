@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(find:*)",
+      "Bash(npx skills add:*)",
+      "Bash(npx skills find:*)",
+      "Bash(npx skills list:*)",
+      "WebFetch(domain:maas-log-prod.cn-wlcb.ufileos.com)",
+      "Bash(file:*)",
+      "Bash(identify:*)"
+    ]
+  }
+}
