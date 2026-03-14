@@ -1,3 +1,7 @@
+---
+title: "渐进式揭示（Progressive Disclosure）：Skill设计的艺术与科学"
+---
+
 # 渐进式揭示（Progressive Disclosure）：Skill设计的艺术与科学
 
 > 本文是"如何写好Skill"系列的第二篇，深入探讨渐进式揭示的设计哲学和实战技巧

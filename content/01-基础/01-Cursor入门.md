@@ -1,3 +1,7 @@
+---
+title: "Cursor入门"
+---
+
 # Cursor入门
 
 ## 什么是Cursor？
