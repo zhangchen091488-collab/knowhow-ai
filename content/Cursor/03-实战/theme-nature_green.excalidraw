@@ -12,7 +12,7 @@
 			"height": 45,
 			"angle": 0,
 			"strokeColor": "#059669",
-			"backgroundColor": "#059669",
+			"backgroundColor": "#96f2d7",
 			"fillStyle": "hachure",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
@@ -22,14 +22,14 @@
 			"roundness": {
 				"type": 3
 			},
-			"version": 2,
-			"versionNonce": 1156056589,
+			"version": 29,
+			"versionNonce": 1981595779,
 			"index": "a0",
 			"isDeleted": false,
 			"seed": 1,
 			"frameId": null,
 			"boundElements": [],
-			"updated": 1773845221199,
+			"updated": 1773845871266,
 			"link": null,
 			"hasTextLink": false,
 			"locked": false
@@ -1727,7 +1727,7 @@
 		"theme": "light",
 		"viewBackgroundColor": "#ffffff",
 		"currentItemStrokeColor": "#1e1e1e",
-		"currentItemBackgroundColor": "transparent",
+		"currentItemBackgroundColor": "#96f2d7",
 		"currentItemFillStyle": "solid",
 		"currentItemStrokeWidth": 2,
 		"currentItemStrokeStyle": "solid",
@@ -1772,7 +1772,7 @@
 		},
 		"disableContextMenu": false,
 		"bindingPreference": "enabled",
-		"isBindingEnabled": true,
+		"isBindingEnabled": false,
 		"isMidpointSnappingEnabled": true
 	},
 	"files": {}
