@@ -1,0 +1,80 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "1f63b1c0-16b0-4d5b-88f6-48ebdfdec1f3",
+      "type": "rectangle",
+      "x": 40,
+      "y": 15,
+      "width": 720,
+      "height": 80,
+      "angle": 0,
+      "strokeColor": "#88C0D0",
+      "backgroundColor": "#F8F9FA",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "d13881b2-6d7b-46e1-9327-a30ea68484b1",
+      "type": "text",
+      "x": 200,
+      "y": 40,
+      "width": 270.0,
+      "height": 21.599999999999998,
+      "angle": 0,
+      "strokeColor": "#2E3440",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "text": "💡 配合 Obsidian + Quartz 使用",
+      "fontSize": 18,
+      "fontFamily": "Virgil",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 14.4
+    },
+    {
+      "id": "407ddd48-7e25-42de-a3aa-a4f9e62fd651",
+      "type": "text",
+      "x": 220,
+      "y": 65,
+      "width": 226.79999999999998,
+      "height": 16.8,
+      "angle": 0,
+      "strokeColor": "#616E88",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "text": "自动同步到 knowhow-ai.vercel.app",
+      "fontSize": 14,
+      "fontFamily": "Virgil",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 11.200000000000001
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "viewModeEnabled": false,
+    "zenModeEnabled": false,
+    "gridModeEnabled": false,
+    "theme": "light"
+  }
+}
