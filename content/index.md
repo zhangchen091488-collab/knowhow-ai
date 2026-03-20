@@ -158,6 +158,6 @@ cssclasses:
 
 <div class="footer-note">
   <p>🌱 数字花园，持续生长中...</p>
-  <p class="last-updated">最后更新：{{ lastModified }}</p>
+  <p class="last-updated">最后更新：2026年3月</p>
   <p class="copyright">Made with ☕ and 💻</p>
 </div>
