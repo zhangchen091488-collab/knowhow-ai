@@ -38,15 +38,15 @@ cssclasses:
 
 <div class="stats-grid">
   <div class="stat-card">
-    <span class="stat-number">{{ count(notes) }}</span>
+    <span class="stat-number">15+</span>
     <span class="stat-label">篇笔记</span>
   </div>
   <div class="stat-card">
-    <span class="stat-number">{{ count(tags) }}</span>
+    <span class="stat-number">30+</span>
     <span class="stat-label">个标签</span>
   </div>
   <div class="stat-card">
-    <span class="stat-number">{{ count(links) }}</span>
+    <span class="stat-number">100+</span>
     <span class="stat-label">条知识连接</span>
   </div>
 </div>
