@@ -1,0 +1,398 @@
+---
+title: "🌱 数字花园搭建指南：Vercel + Quartz + 阿里云域名"
+tags: [数字花园, Quartz, Vercel, 阿里云, 域名, 部署]
+---
+
+# 🌱 数字花园搭建指南
+
+> 从零开始，用 Vercel + Quartz + 阿里云域名搭建你的个人知识网站
+
+---
+
+## 🎣 钩子：为什么你需要一座数字花园？
+
+你是否也有这样的困扰？
+
+- 笔记写了无数，但散落在各处，想用时找不到
+- 学习了新知识，过段时间就忘了
+- 想分享自己的学习心得，但没有合适的平台
+
+**数字花园** 就是解决方案。
+
+它不像博客那样需要精心打磨每一篇文章，而是像一个随心的后花园——你可以随意播种、浇水、修剪。这里的每一篇笔记都是「生长中的知识」，随着你的理解加深而不断迭代。
+
+而 **Quartz** 就是为你这座花园量身定做的「温室」——它能将你的 Obsidian 笔记自动变成美丽的静态网站，无需懂代码，发布即生效。
+
+准备好了吗？让我们开始建造你的数字花园。
+
+---
+
+## 🧩 第一部分：认识工具
+
+### 什么是 Vercel？
+
+**Vercel** 是一个专为前端开发者打造的云平台，你可以把它理解为一个「免费的全球 CDN + 自动化部署服务」。
+
+为什么选择 Vercel？
+
+| 特性 | 说明 |
+|------|------|
+| �免费 | 个人项目完全免费，流量足够 |
+| 🚀 极速 | 全球 CDN 加速，访问体验一流 |
+| 🔄 自动化 | GitHub 推送代码自动部署 |
+| 🌍 HTTPS | 自动配置 SSL 证书 |
+| ⚡ 零配置 | 支持 30+ 框架，无需编写 Dockerfile |
+
+简单来说：**你把代码交给 Vercel，它帮你托管、加速、配置 HTTPS，还不要钱。**
+
+### 什么是 Quartz？
+
+**Quartz** 是一个开源的静态网站生成器，专门为 Obsidian 用户设计。
+
+它的核心能力：
+
+| 特性 | 说明 |
+|------|------|
+| 📥 直接读取 Obsidian 库 | 无需转换，笔记即网站 |
+| 🎨 14+ 精美主题 | 来自 Linear、Figma、Vercel 等设计系统 |
+| 🔗 支持双向链接 | 像 Obsidian 一样构建知识网络 |
+| 📱 响应式布局 | 手机、平板、桌面都好看 |
+| 🏷️ 标签系统 | 自动生成标签页和反向链接 |
+
+> Quartz 的设计理念是：**「你的笔记应该在哪里被找到，而不是被迫重新组织」**
+
+---
+
+## 🛠️ 第二部分：准备工作
+
+在开始之前，你需要准备以下内容：
+
+### 必备工具清单
+
+| 工具 | 用途 | 获取方式 |
+|------|------|----------|
+| **Obsidian** | 笔记管理 | obsidian.md |
+| **GitHub 账号** | 代码托管 | github.com |
+| **Vercel 账号** | 网站托管 | vercel.com |
+| **阿里云账号** | 域名管理 | aliyun.com |
+| **域名** | 网站地址 | 阿里云购买 |
+
+### 环境要求
+
+- **操作系统**：macOS / Linux / Windows (WSL2)
+- **Node.js**：>= 22
+- **Git**：已安装
+
+```bash
+# 检查 Node.js 版本
+node -v
+
+# 检查 Git 版本
+git --version
+```
+
+<Warning>
+Windows 用户建议使用 WSL2，可以避免很多路径问题
+</Warning>
+
+---
+
+## 🚀 第三部分：本地部署 Quartz
+
+### 步骤 1：创建 Quartz 项目
+
+有两种方式，任选其一：
+
+#### 方式 A：从头创建（推荐）
+
+```bash
+# 克隆 Quartz 模板
+git clone https://github.com/jackyzha0/quartz.git
+cd quartz
+
+# 安装依赖
+npm install
+```
+
+#### 方式 B：初始化到现有 Obsidian 库
+
+如果你的笔记已经在 Obsidian 中，直接在该目录下：
+
+```bash
+# 克隆 Quartz 到笔记库根目录
+git clone https://github.com/jackyzha0/quartz.git .
+```
+
+### 步骤 2：配置 Quartz
+
+项目目录结构：
+
+```
+quartz/
+├── content/          # 你的笔记放这里
+├── quartz.config.ts  # 配置文件
+├── quartz.layout.ts  # 布局配置
+├── package.json
+└── public/           # 构建输出（不要手动修改）
+```
+
+编辑 `quartz.config.ts`：
+
+```typescript
+const config: QuartzConfig = {
+  configuration: {
+    pageTitle: "你的花园名称",
+    pageTitleSuffix: " - 副标题",
+    baseUrl: "your-domain.com",  // 替换为你的域名
+    // ...
+  },
+  // ...
+}
+```
+
+### 步骤 3：预览效果
+
+```bash
+npm run serve
+```
+
+打开浏览器访问 `http://localhost:8080`，你应该能看到你的数字花园了 🎉
+
+---
+
+## 📡 第四部分：推送到 GitHub
+
+### 步骤 1：创建 GitHub 仓库
+
+1. 登录 [GitHub](https://github.com)
+2. 点击右上角 **+** → **New repository**
+3. 填写仓库名（如 `my-digital-garden`）
+4. 选择 **Public**
+5. 点击 **Create repository**
+
+### 步骤 2：本地初始化 Git
+
+```bash
+# 进入项目目录
+cd quartz
+
+# 初始化 Git
+git init
+
+# 添加所有文件
+git add .
+
+# 提交初始版本
+git commit -m "Initial commit: 数字花园初始化"
+```
+
+### 步骤 3：关联远程仓库
+
+```bash
+# 替换为你的 GitHub 用户名和仓库名
+git remote add origin https://github.com/YOUR_USERNAME/my-digital-garden.git
+
+# 推送到 GitHub
+git branch -M main
+git push -u origin main
+```
+
+<Info>
+以后每次修改笔记后，只需要：
+```bash
+git add .
+git commit -m "更新笔记"
+git push
+```
+Vercel 会自动检测到更新并重新部署。
+</Info>
+
+---
+
+## 🌐 第五部分：Vercel 部署
+
+### 步骤 1：导入项目
+
+1. 登录 [Vercel](https://vercel.com)
+2. 点击 **Add New...** → **Project**
+3. 在 **Import Git Repository** 中找到你的仓库
+4. 点击 **Import**
+
+### 步骤 2：配置构建
+
+Vercel 会自动检测到这是 Quartz 项目，配置如下：
+
+| 设置项 | 值 |
+|--------|-----|
+| Framework Preset | Other |
+| Build Command | `npx quartz build` |
+| Output Directory | `public` |
+| Install Command | `npm install` |
+
+### 步骤 3：部署
+
+点击 **Deploy**，等待 1-2 分钟。
+
+🎉 **成功！** 你会获得一个类似 `your-project.vercel.app` 的临时域名。
+
+---
+
+## 🔗 第六部分：阿里云域名配置
+
+### 步骤 1：购买域名（如果还没有）
+
+1. 登录 [阿里云](https://aliyun.com)
+2. 进入 **域名控制台**
+3. 点击 **域名注册**
+4. 搜索并购买你喜欢的域名
+
+<Info>
+推荐选择 `.com`、`.io`、`.me` 等简短域名，个人博客首选。
+</Info>
+
+### 步骤 2：获取 Vercel 分配的 DNS
+
+1. 在 Vercel 项目中，进入 **Settings** → **Domains**
+2. 在 **Domain** 中输入你的域名（如 `yourname.com`）
+3. Vercel 会显示需要配置的 DNS 记录
+
+通常需要添加两条记录：
+
+| 类型 | 名称 | 值 |
+|------|------|-----|
+| CNAME | @ | cname.vercel-dns.com |
+| CNAME | www | cname.vervel-dns.com |
+
+### 步骤 3：在阿里云配置 DNS
+
+1. 登录阿里云域名控制台
+2. 点击目标域名后的 **解析**
+3. 添加解析记录：
+
+**记录 1：**
+- 记录类型：`CNAME`
+- 主机记录：`@`（代表根域名）
+- 记录值：`cname.vercel-dns.com`
+
+**记录 2：**
+- 记录类型：`CNAME`
+- 主机记录：`www`
+- 记录值：`cname.vercel-dns.com`
+
+### 步骤 4：验证生效
+
+回到 Vercel，点击 **Refresh**，等待 DNS 生效（通常需要 1-10 分钟）。
+
+配置成功后，你的域名就能正常访问了！🎉
+
+---
+
+## 🔒 第七部分：HTTPS 配置
+
+好消息：**Vercel 自动为你配置 HTTPS！**
+
+当域名验证通过后，Vercel 会自动申请并配置 Let's Encrypt 证书。你只需要等待几分钟，然后访问 `https://your-domain.com` 即可。
+
+<Info>
+如果想强制使用 HTTPS，可以在 Vercel 中开启 **Redirect** 设置，将所有 HTTP 请求重定向到 HTTPS。
+</Info>
+
+---
+
+## 📝 第八部分：日常使用流程
+
+### 写完笔记后发布
+
+```bash
+# 1. 进入项目目录
+cd your-quartz-folder
+
+# 2. 构建网站
+npm run build
+
+# 3. 提交更新
+git add .
+git commit -m "更新：新增 xxx 笔记"
+
+# 4. 推送到 GitHub
+git push
+```
+
+Vercel 会自动检测到更新并在 1-2 分钟内部署完成。
+
+### 自动化部署（推荐）
+
+你甚至可以设置本地文件变化自动推送：
+
+```bash
+# 使用 quartz 内置的监听模式
+npx quartz build --serve
+# 修改文件后自动构建
+
+# 配合 git hooks 实现自动推送（可选）
+```
+
+---
+
+## ❓ 常见问题
+
+### Q1：域名解析生效要多久？
+
+通常 1-10 分钟不等，最长不超过 24 小时。如果超过 24 小时，请检查 DNS 配置是否正确。
+
+### Q2：Vercel 免费版有流量限制吗？
+
+有，但很宽松：
+- 个人项目：100GB/月
+- 带宽超出会收到邮件通知
+
+对于个人笔记网站，足够使用。
+
+### Q3：笔记中的图片显示不了？
+
+确保图片路径是相对路径，且在 `content` 目录下。Quartz 会自动处理相对链接。
+
+### Q4：如何自定义主题？
+
+编辑 `quartz.config.ts` 中的 `theme` 配置，或修改 `05-Assets/custom-styles.css`。
+
+### Q5：能绑定多个域名吗？
+
+可以。在 Vercel 的 **Domains** 设置中添加多个域名即可。
+
+---
+
+## 🎯 总结
+
+恭喜你！已经成功搭建了自己的数字花园。
+
+让我们回顾一下做了什么：
+
+1. ✅ 了解 Vercel 和 Quartz 是什么
+2. ✅ 在本地部署 Quartz
+3. ✅ 推送到 GitHub
+4. ✅ 用 Vercel 自动部署
+5. ✅ 配置阿里云域名
+6. ✅ 开启 HTTPS
+
+**接下来做什么？**
+
+- 开始写你的第一篇笔记
+- 探索 Quartz 的主题定制
+- 把你的数字花园分享给朋友
+
+你的知识值得被看见。🌱
+
+---
+
+## 📎 相关资源
+
+- [Quartz 官方文档](https://quartz.jzhao.xyz)
+- [Vercel 官方文档](https://vercel.com/docs)
+- [阿里云域名解析文档](https://help.aliyun.com/document_detail/29725.html)
+- [Obsidian 官网](https://obsidian.md)
+- [Excalidraw 图表在文档中的应用](./Excalidraw图表在文档中的应用)
+
+---
+
+*本指南基于 Quartz v4.5.2 编写，最后更新于 2026年3月*
