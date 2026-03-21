@@ -54,9 +54,9 @@ cssclasses:
     <h3>💠 Cursor 驯养记</h3>
     <p>如何让 AI 助手帮你写代码，而不是帮倒忙</p>
     <ul>
-      <li><a href="Cursor/01-基础/01-Cursor 入门">入门：先跑起来</a></li>
-      <li><a href="Cursor/02-进阶/Skills 体系架构">Skills：定制你的 AI 能力</a></li>
-      <li><a href="Cursor/02-进阶/Subagent 协作模式">Subagent：让它帮你干活</a></li>
+      <li><a href="Cursor/01-基础/01-Cursor入门">入门：先跑起来</a></li>
+      <li><a href="Cursor/02-进阶/Skills深度探索">Skills：定制你的 AI 能力</a></li>
+      <li><a href="Cursor/02-进阶/Subagent协作模式">Subagent：让它帮你干活</a></li>
     </ul>
   </div>
   
@@ -64,7 +64,7 @@ cssclasses:
     <h3>🤖 AI 思维练习</h3>
     <p>从「会写代码」到「会用 AI 写代码」</p>
     <ul>
-      <li><a href="Cursor/04-思考/内化吸收新技术方法论">学习方法论</a></li>
+      <li><a href="Cursor/04-思考/公众号文章模板">学习方法论</a></li>
       <li><a href="Cursor/03-实战/数字花园搭建指南-Quartz-Vercel-阿里云域名">建站指南</a></li>
     </ul>
   </div>
@@ -132,19 +132,15 @@ cssclasses:
 <div class="links-grid">
   <a href="https://cursor.com" class="link-card" target="_blank">
     <h4>💠 Cursor</h4>
-    <p>cursor.com</p>
   </a>
   <a href="https://docs.cursor.com" class="link-card" target="_blank">
     <h4>📚 Cursor 文档</h4>
-    <p>docs.cursor.com</p>
   </a>
   <a href="https://docs.openclaw.ai" class="link-card" target="_blank">
     <h4>🦞 OpenClaw</h4>
-    <p>docs.openclaw.ai</p>
   </a>
   <a href="https://github.com/zhangchen091488-collab" class="link-card" target="_blank">
     <h4>🐙 GitHub</h4>
-    <p>github.com/zhangchen091488-collab</p>
   </a>
 </div>
 
