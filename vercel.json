@@ -3,5 +3,10 @@
   "outputDirectory": "public",
   "installCommand": "npm install",
   "framework": null,
-  "regions": ["iad1"]
+  "regions": ["iad1"],
+  "vercel": {
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/$1.html" }
+    ]
+  }
 }
