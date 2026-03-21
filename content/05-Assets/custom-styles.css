@@ -1,34 +1,6 @@
 /* KnowHowAI 自定义样式 */
 
 /* Hero 区域 */
-.hero-section {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-  padding: 3rem 2rem;
-  border-radius: 16px;
-  margin-bottom: 2rem;
-  color: #e8e8e8;
-}
-
-.hero-section h1 {
-  color: #fff;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-section blockquote {
-  font-size: 1.1rem;
-  color: #a0a0a0;
-  border-left: none;
-  padding-left: 0;
-  font-style: italic;
-}
-
-.hero-section p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #d0d0d0;
-}
-
 .hero-buttons {
   display: flex;
   gap: 1rem;
@@ -57,106 +29,7 @@
 
 .hero-buttons .button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-}
-
-/* 花园数据统计 */
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
-.stat-card {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 1.5rem;
-  border-radius: 12px;
-  text-align: center;
-  color: white;
-}
-
-.stat-number {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.stat-label {
-  font-size: 0.9rem;
-  opacity: 0.9;
-}
-
-/* Focus Grid - 我正在折腾的事 */
-.focus-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.focus-card {
-  background: var(--theme-color-bg-tertiary);
-  padding: 1.5rem;
-  border-radius: 12px;
-  border-left: 4px solid #667eea;
-  transition: transform 0.2s ease;
-}
-
-.focus-card:hover {
-  transform: translateY(-4px);
-}
-
-.focus-card h3 {
-  margin-top: 0;
-  font-size: 1.2rem;
-  color: #667eea;
-}
-
-.focus-card p {
-  color: var(--theme-color-text-muted);
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-}
-
-.focus-card ul {
-  margin: 0;
-  padding-left: 1.25rem;
-}
-
-.focus-card li {
-  margin-bottom: 0.5rem;
-}
-
-/* Gear Grid - 养虾装备库 */
-.gear-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
-.gear-card {
-  background: var(--theme-color-bg-tertiary);
-  padding: 1.25rem;
-  border-radius: 10px;
-  border-left: 3px solid #f5576c;
-}
-
-.gear-card h4 {
-  margin-top: 0;
-  font-size: 1rem;
-  color: #f5576c;
-}
-
-.gear-card ul {
-  margin: 0.5rem 0 0 0;
-  padding-left: 1.25rem;
-}
-
-.gear-card li {
-  margin-bottom: 0.4rem;
-  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Feature Grid */
@@ -252,7 +125,7 @@
 /* Links Grid */
 .links-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   margin: 2rem 0;
 }
@@ -295,15 +168,9 @@
   margin: 0.5rem 0;
 }
 
-.footer-note .last-updated {
+.last-updated {
   font-size: 0.85rem;
   color: var(--theme-color-text-muted);
-}
-
-.footer-note .copyright {
-  font-size: 0.8rem;
-  color: var(--theme-color-text-muted);
-  margin-top: 1rem;
 }
 
 /* 通用按钮样式 */
@@ -330,23 +197,9 @@
     flex-direction: column;
   }
   
-  .hero-section {
-    padding: 2rem 1rem;
-  }
-  
-  .hero-section h1 {
-    font-size: 1.8rem;
-  }
-  
-  .stats-grid {
-    grid-template-columns: 1fr;
-  }
-  
   .feature-grid,
   .topic-grid,
-  .links-grid,
-  .focus-grid,
-  .gear-grid {
+  .links-grid {
     grid-template-columns: 1fr;
   }
 }
