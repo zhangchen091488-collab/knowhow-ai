@@ -53,15 +53,15 @@ Cursor 核心功能和使用技巧的系统化总结。
   <div class="topic-card">
     <h4>📘 基础篇</h4>
     <ul>
-      <li><a href="Cursor/01-基础/01-Cursor 入门">快速上手 Cursor</a></li>
+      <li><a href="Cursor/01-基础/01-Cursor入门.html">快速上手 Cursor</a></li>
     </ul>
   </div>
   <div class="topic-card">
     <h4>📗 进阶篇</h4>
     <ul>
-      <li><a href="Cursor/02-进阶/Skills 体系架构">Skills 深度探索</a></li>
-      <li><a href="Cursor/02-进阶/Subagent 协作模式">Subagent 协作</a></li>
-      <li><a href="Cursor/02-进阶/如何写好 Skill-完整指南">Skill 编写指南</a></li>
+      <li><a href="Cursor/02-进阶/Skills深度探索.html">Skills 深度探索</a></li>
+      <li><a href="Cursor/02-进阶/Subagent协作模式.html">Subagent 协作</a></li>
+      <li><a href="Cursor/02-进阶/如何写好Skill-完整指南.html">Skill 编写指南</a></li>
     </ul>
   </div>
   <div class="topic-card">
@@ -73,7 +73,7 @@ Cursor 核心功能和使用技巧的系统化总结。
   <div class="topic-card">
     <h4>📕 思考篇</h4>
     <ul>
-      <li><a href="Cursor/04-思考/内化吸收新技术方法论">学习方法论</a></li>
+      <li><a href="Cursor/04-思考/公众号文章模板.html">学习方法论</a></li>
     </ul>
   </div>
 </div>
@@ -90,22 +90,22 @@ OpenClaw 自托管网关的完整指南。
   <div class="topic-card">
     <h4>🚀 快速开始</h4>
     <ul>
-      <li><a href="06-OpenClaw/01-OpenClaw 快速入门">4 步快速安装</a></li>
-      <li><a href="06-OpenClaw/02-OpenClaw 安装方法">详细安装方式</a></li>
+      <li><a href="06-OpenClaw/01-OpenClaw 快速入门.html">4 步快速安装</a></li>
+      <li><a href="06-OpenClaw/02-OpenClaw 安装方法.html">详细安装方式</a></li>
     </ul>
   </div>
   <div class="topic-card">
     <h4>⚙️ 配置指南</h4>
     <ul>
-      <li><a href="06-OpenClaw/03-OpenClaw 配置指南">配置文件详解</a></li>
-      <li><a href="06-OpenClaw/04-OpenClaw CLI 参考">CLI 工具参考</a></li>
+      <li><a href="06-OpenClaw/03-OpenClaw 配置指南.html">配置文件详解</a></li>
+      <li><a href="06-OpenClaw/04-OpenClaw CLI 参考.html">CLI 工具参考</a></li>
     </ul>
   </div>
   <div class="topic-card">
     <h4>🔧 进阶使用</h4>
     <ul>
-      <li><a href="06-OpenClaw/05-OpenClaw 架构概念">架构说明</a></li>
-      <li><a href="06-OpenClaw/06-OpenClaw 飞书插件使用指南">飞书集成</a></li>
+      <li><a href="06-OpenClaw/05-OpenClaw 架构概念.html">架构说明</a></li>
+      <li><a href="06-OpenClaw/06-OpenClaw 飞书插件使用指南.html">飞书集成</a></li>
     </ul>
   </div>
 </div>
