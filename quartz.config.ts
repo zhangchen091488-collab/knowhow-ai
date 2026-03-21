@@ -10,6 +10,7 @@ const config: QuartzConfig = {
   configuration: {
     pageTitle: "KnowHowAI",
     pageTitleSuffix: " - Cursor AI 编程实战指南",
+    defaultUrlExtension: "html",
     enableSPA: false,
     enablePopovers: true,
     analytics: {
