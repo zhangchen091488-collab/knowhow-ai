@@ -4,9 +4,11 @@
   "installCommand": "npm install",
   "framework": null,
   "regions": ["iad1"],
-  "vercel": {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/$1.html" }
-    ]
-  }
+  "routes": [
+    {
+      "src": "/((?!.*\\.)[^/]+/.*)",
+      "dest": "/$1.html",
+      "status": 200
+    }
+  ]
 }
