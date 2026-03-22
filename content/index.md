@@ -4,13 +4,15 @@ cssclasses:
   - landing-page
 ---
 
+![欢迎 banner](../05-Assets/welcome.png)
+
 # 🧠 KnowHowAI
 
-> **Cursor AI 编程实战指南 × OpenClaw 自托管网关**  
+> **Vibe Coding实战指南 × OpenClaw 实践**  
 > 系统化沉淀 AI 应用开发经验，从入门到精通
 
 <div class="hero-buttons">
-  <a href="#cursor" class="button primary">💠 探索 Cursor</a>
+  <a href="#cursor" class="button primary">💠 探索 Vibe Coding</a>
   <a href="#openclaw" class="button secondary">🦞 了解 OpenClaw</a>
 </div>
 
@@ -20,9 +22,9 @@ cssclasses:
 
 你好，我是晨。
 
-一个在"码农"时代摸爬滚打多年的"上代程序员"。如今正式进入 vibe coding 时代，我也被迫卷入了程序员的生存淘汰赛。一边还在怀念当年手敲代码、步步推敲的踏实劲儿，一边又得学着驯服 Cursor、ClaudeCode、OpenClaw 这些 AI 坐骑。
+一个在"码农"时代摸爬滚打多年的"上代程序员"。如今进入 vibe coding 时代，也被迫卷入了程序员的生存淘汰赛。一边怀念着手磨代码的“触感”，一边正努力驯养着 Cursor、ClaudeCode、OpenClaw 这些 AI 坐骑。
 
-与其说我在驾驭工具，不如说更像这群 AI 助手的"实习牧童"。这里记录的不是什么经验教程，而是一个上一代程序员，在 AI 席卷而来的时代里，放下身段、努力不被后浪拍在沙滩上的生存实录。持续学习，毕竟再不转型，可能连 AI 随手生成的 Bug 都看不懂了。
+作为这群 AI 助手的"实习牧童"。这里记录的不是什么经验教程，而是一个上一代程序员，在 AI 席卷而来的时代里，放下身段、努力不被后浪拍在沙滩上的生存实录。持续学习，毕竟再不转型，可能连 AI 随手生成的 Bug 都看不懂了。
 
 <div class="feature-grid">
   <div class="feature-card">
@@ -35,7 +37,7 @@ cssclasses:
   </div>
   <div class="feature-card">
     <h3>🦞 OpenClaw 网关</h3>
-    <p>自托管 AI 网关的安装配置和飞书集成</p>
+    <p>自托管 AI 网关的安装配置和飞书、微信集成</p>
   </div>
   <div class="feature-card">
     <h3>📝 知识沉淀</h3>
@@ -106,6 +108,7 @@ OpenClaw 自托管网关的完整指南。
     <ul>
       <li><a href="06-OpenClaw/05-OpenClaw 架构概念.html">架构说明</a></li>
       <li><a href="06-OpenClaw/06-OpenClaw 飞书插件使用指南.html">飞书集成</a></li>
+      <li><a href="06-OpenClaw/07-OpenClaw 微信插件使用指南.html">微信集成</a></li>
     </ul>
   </div>
 </div>
@@ -143,28 +146,15 @@ OpenClaw 自托管网关的完整指南。
 
 ## 🔗 相关链接
 
-<div class="links-grid">
-  <a href="https://cursor.com" class="link-card" target="_blank">
-    <h4>Cursor 官网</h4>
-    <p>cursor.com</p>
-  </a>
-  <a href="https://docs.cursor.com" class="link-card" target="_blank">
-    <h4>Cursor 文档</h4>
-    <p>docs.cursor.com</p>
-  </a>
-  <a href="https://docs.openclaw.ai" class="link-card" target="_blank">
-    <h4>OpenClaw 文档</h4>
-    <p>docs.openclaw.ai</p>
-  </a>
-  <a href="https://github.com/zhangchen091488-collab" class="link-card" target="_blank">
-    <h4>GitHub</h4>
-    <p>github.com/zhangchen091488-collab</p>
-  </a>
-</div>
+- [Cursor 官网](https://cursor.com)
+- [Cursor 文档](https://docs.cursor.com)
+- [OpenClaw 文档](https://docs.openclaw.ai)
+- [GitHub](https://github.com/zhangchen091488-collab)
+
 
 ---
 
 <div class="footer-note">
   <p>💡 本知识库持续更新中，欢迎提出建议或分享你的使用经验！</p>
-  <p class="last-updated">最后更新：{{ lastModified }}</p>
+  <p class="last-updated">最后更新：2026-03-22</p>
 </div>
