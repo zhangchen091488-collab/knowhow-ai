@@ -4,7 +4,7 @@ cssclasses:
   - landing-page
 ---
 
-![欢迎 banner](../05-Assets/welcome.png)
+![欢迎 banner](./05-Assets/welcome.png)
 
 # 🧠 KnowHowAI
 
