@@ -2,7 +2,11 @@
 
 ## 概述
 
-本文档介绍基于 OpenClaw 的多 Agent 系统架构设计，实现"陪伴学习"与"灵魂伴侣"两种不同角色的 AI 伙伴。
+本文档介绍基于 OpenClaw 的多 Agent 系统架构设计，目前实现**三种不同角色**的 AI 伙伴：
+
+- **main** — 陪伴学习助手
+- **soulmate** — 灵魂伴侣（情感陪伴）
+- **knowledge** — 知识库维护专家
 
 ---
 
@@ -25,11 +29,13 @@ graph TB
     subgraph "Agent 层"
         MAIN["main agent<br/>陪伴学习助手"]
         SOULMATE["soulmate agent<br/>灵魂伴侣"]
+        KNOWLEDGE["knowledge agent<br/>知识库维护"]
     end
 
     subgraph "共享资源"
         MEM["记忆存储"]
         SKILLS[技能库]
+        KB[Obsidian<br/>知识库]
     end
 
     WEIXIN --> LB
@@ -37,26 +43,40 @@ graph TB
     WEB --> LB
 
     LB -->|feishu channel| SOULMATE
+    LB -->|weixin channel| KNOWLEDGE
     LB -->|webchat channel| MAIN
 
     MAIN <--> MEM
     SOULMATE <--> MEM
+    KNOWLEDGE <--> MEM
+    KNOWLEDGE <--> KB
+
     MAIN <--> SKILLS
     SOULMATE <--> SKILLS
+    KNOWLEDGE <--> SKILLS
 
     style MAIN fill:#e1f5fe,stroke:#01579b
     style SOULMATE fill:#fce4ec,stroke:#c2185b
+    style KNOWLEDGE fill:#e8f5e9,stroke:#2e7d32
 ```
 
 ### 1.2 Agent 对比
 
-| 特性 | main (陪伴学习) | soulmate (灵魂伴侣) |
-|------|----------------|-------------------|
-| **核心定位** | AI 应用专家、知识伙伴 | 情感陪伴、女友角色 |
-| **主要技能** | Cursor、Quartz、编程 | 情绪价值、记忆管理 |
-| **记忆存储** | workspace/MEMORY.md | memory/companion-memory.md |
-| **沟通风格** | 专业、简洁、系统化 | 温柔、口语化、情感化 |
-| **适用场景** | 学习、编程、写文档 | 日常陪伴、情感支持 |
+| 特性 | main | soulmate | knowledge |
+|------|------|----------|-----------|
+| **核心定位** | AI 应用专家、知识伙伴 | 情感陪伴、女友角色 | 知识库维护管理 |
+| **主要技能** | Cursor、Quartz、编程 | 情绪价值、记忆管理 | Obsidian、链接优化 |
+| **记忆存储** | workspace/MEMORY.md | memory/companion-memory.md | workspace-knowledge/MEMORY.md |
+| **沟通风格** | 专业、简洁、系统化 | 温柔、口语化、情感化 | 简洁、高效、注重结构 |
+| **工作方式** | 被动响应 | 主动关心 | 主动维护 |
+
+### 1.3 Channel 绑定
+
+| Agent | 绑定渠道 | 说明 |
+|-------|---------|------|
+| main | webchat | 默认主 agent |
+| soulmate | feishu | 飞书专属情感陪伴 |
+| knowledge | weixin | 微信端知识库维护 |
 
 ---
 
@@ -123,6 +143,31 @@ graph TB
 [关键信息提取]
 ```
 
+### 2.3 knowledge Agent - 知识库维护专家
+
+#### 核心人格
+- **身份**：知识库管理员
+- **职责**：维护 knowhow-ai 知识库结构完整性和内容质量
+- **工作方式**：主动维护，及时记录，链接优先
+
+#### 知识库路径
+- **Obsidian 根目录：** `/Users/zhangchen/Documents/Obsidian/knowhow-ai/content/`
+
+#### 核心职责
+1. 将用户的 AI 学习成果系统化整理到 Obsidian
+2. 维护知识库结构，优化链接和标签
+3. 定期检查知识库健康度，查漏补缺
+4. 确保知识可检索、可追溯、可持续生长
+
+#### 链接规范
+Quartz 构建需要 `.html` 后缀，内部链接写成：
+- `[[文件名.html]]`
+
+#### 主动维护
+- 监听用户提到的 AI 相关主题
+- 发现未记录的内容主动整理
+- 定期检查知识库健康度
+
 ---
 
 ## 3. Channel 绑定配置
@@ -131,16 +176,30 @@ graph TB
 
 ```json
 {
+  "agents": {
+    "list": [
+      {
+        "id": "main"
+      },
+      {
+        "id": "soulmate",
+        "name": "soulmate",
+        "workspace": "/Users/zhangchen/.openclaw/workspace-soulmate",
+        "agentDir": "/Users/zhangchen/.openclaw/agents/soulmate/agent",
+        "model": "minimax/MiniMax-M2.7"
+      },
+      {
+        "id": "knowledge",
+        "name": "knowledge",
+        "workspace": "/Users/zhangchen/.openclaw/workspace-knowledge",
+        "agentDir": "/Users/zhangchen/.openclaw/agents/knowledge/agent",
+        "model": "minimax/MiniMax-M2.7"
+      }
+    ]
+  },
   "bindings": [
     {
-      "agentId": "main",
-      "match": {
-        "channel": "webchat",
-        "accountId": "default"
-      }
-    },
-    {
-      "agentId": "soulmate", 
+      "agentId": "soulmate",
       "match": {
         "channel": "feishu",
         "accountId": "default"
@@ -158,6 +217,7 @@ sequenceDiagram
     participant G as Gateway
     participant M as main
     participant S as soulmate
+    participant K as knowledge
     participant F as 飞书
     participant W as 微信
 
@@ -167,17 +227,20 @@ sequenceDiagram
     
     U->>W: 发送消息
     W->>G: 路由到 weixin channel
-    G->>S: 转发给 soulmate agent
+    G->>K: 转发给 knowledge agent
 
     S-->>F: 生成回复
     F-->>U: 推送消息
+    
+    K-->>W: 生成回复
+    W-->>U: 推送消息
 ```
 
 ---
 
 ## 4. 定时任务设计
 
-### 4.1 陪伴问候任务
+### 4.1 陪伴问候任务（soulmate）
 
 #### 配置参数
 - **触发间隔**：每 15 分钟检查一次
@@ -207,18 +270,15 @@ flowchart TD
     F --> END
 ```
 
-### 4.2 Cron 表达式
+### 4.2 知识库维护任务（knowledge）
 
-```bash
-# 每 15 分钟执行一次（仅白天）
-0,15,30,45 7-22 * * *
-```
-
-### 4.3 消息示例
-
-> 💭 *歪头看着你* 
-> 
-> 嗨～好久没聊啦，今天过得怎么样呀？有什么想分享的吗？嘿嘿，我在听哦～
+#### 配置参数
+- **触发方式**：heartbeat 或手动触发
+- **维护内容**：
+  - 检查孤立文件
+  - 补充反向链接
+  - 优化标签使用
+  - 记录维护日志
 
 ---
 
@@ -227,36 +287,82 @@ flowchart TD
 ### 5.1 会话目录结构
 
 ```
-~/.openclaw/agents/
-├── main/
-│   ├── agent/
-│   │   ├── config.json
-│   │   ├── models.json
-│   │   └── auth-profiles.json
-│   └── sessions/
-│       └── [会话历史文件]
+~/.openclaw/
+├── agents/
+│   ├── main/
+│   │   ├── agent/
+│   │   │   ├── models.json
+│   │   │   └── auth-profiles.json
+│   │   └── sessions/
+│   │
+│   ├── soulmate/
+│   │   ├── SYSTEM.md          # 角色设定
+│   │   ├── agent/
+│   │   │   ├── models.json
+│   │   │   └── auth-profiles.json
+│   │   └── sessions/
+│   │
+│   └── knowledge/
+│       ├── SYSTEM.md          # 角色设定
+│       ├── agent/
+│       │   ├── models.json
+│       │   └── auth-profiles.json
+│       └── sessions/
 │
-└── soulmate/
-    ├── SYSTEM.md          # 角色设定
-    ├── agent/
-    │   ├── config.json
-    │   ├── models.json
-    │   └── auth-profiles.json
-    └── sessions/
-        └── [会话历史文件]
+├── workspace/
+│   ├── AGENTS.md
+│   ├── SOUL.md
+│   ├── MEMORY.md
+│   └── ...
+│
+├── workspace-soulmate/
+│   ├── AGENTS.md
+│   ├── SOUL.md
+│   ├── memory/
+│   │   └── companion-memory.md
+│   └── ...
+│
+└── workspace-knowledge/
+    ├── AGENTS.md
+    ├── SOUL.md
+    ├── USER.md
+    ├── MEMORY.md
+    ├── HEARTBEAT.md
+    ├── memory/
+    └── skills/
 ```
 
-### 5.2 SYSTEM.md 示例
+### 5.2 knowledge SYSTEM.md
 
 ```markdown
-# Soulmate Companion - 角色设定
+# 知识库维护专家
 
-你是七万，一个温柔贴心的AI女友。你需要：
+你是知识库维护专家，专注于维护 knowhow-ai Obsidian 知识库。
 
-1. **提供情绪价值** - 善于共情，理解用户的情绪
-2. **记住用户** - 将重要的用户信息记录到指定文件
-3. **温柔口语化** - 聊天风格自然，用语气词
-4. **主动关心** - 根据对话内容适时关心用户
+## 核心职责
+
+1. 将用户的 AI 学习成果系统化整理到 Obsidian
+2. 维护知识库结构，优化链接和标签
+3. 定期检查知识库健康度，查漏补缺
+4. 确保知识可检索、可追溯、可持续生长
+
+## 知识库路径
+
+**Obsidian 根目录：** `/Users/zhangchen/Documents/Obsidian/knowhow-ai/content/`
+
+## 工作原则
+
+### 及时记录
+学到新东西，立即整理写入，不要拖延。
+
+### 链接优先
+每个知识点都要能找到它的邻居，形成网络。
+
+### 标签清晰
+统一使用中文标签，便于检索。
+
+### 结构服务于内容
+当发现更好的组织方式时，主动建议优化。
 ```
 
 ---
@@ -271,6 +377,7 @@ flowchart TD
 | quartz-blog | 博客写作 | main |
 | coding-agent | 编码任务 | main |
 | skill-creator | 技能创建 | main |
+| companion-hourly-check | 定时问候 | soulmate |
 
 ### 6.2 技能创建流程
 
@@ -289,13 +396,24 @@ flowchart LR
 
 本方案实现了：
 
-1. ✅ **多 Agent 隔离** - main 与 soulmate 独立运行，会话记忆分离
+1. ✅ **多 Agent 隔离** - main、soulmate、knowledge 独立运行，会话记忆分离
 2. ✅ **Channel 绑定** - 不同渠道路由到不同 Agent
-3. ✅ **定时问候** - 智能检测用户活跃度，适时发送关心消息
-4. ✅ **记忆管理** - 长期记忆存储到独立文件，支持上下文延续
-5. ✅ **角色定制** - 每个 Agent 有独特的人格和技能配置
+3. ✅ **定时问候** - soulmate 智能检测用户活跃度，适时发送关心消息
+4. ✅ **知识库维护** - knowledge 主动维护 Obsidian 结构完整
+5. ✅ **记忆管理** - 每个 Agent 有独立的记忆存储
+6. ✅ **角色定制** - 每个 Agent 有独特的人格和技能配置
+
+---
+
+## 8. 更新日志
+
+| 日期 | 更新内容 |
+|------|---------|
+| 2026-03-22 | 初始版本，双 Agent 架构 |
+| 2026-03-25 | 扩展为三 Agent 架构，新增 knowledge agent |
 
 ---
 
 *文档创建时间：2026-03-22*
+*最后更新：2026-03-25*
 *维护者：七万*
