@@ -138,6 +138,12 @@ OpenClaw 自托管网关的完整指南。
       <li><a href="07-效率工具/02-zoxide.html">zoxide - 智能目录跳转</a></li>
     </ul>
   </div>
+  <div class="topic-card">
+    <h4>🖥️ 终端浏览器</h4>
+    <ul>
+      <li><a href="07-效率工具/03-carbonyl.html">carbonyl - 服务端 Chromium</a></li>
+    </ul>
+  </div>
 </div>
 
 <a href="07-效率工具/_index" class="button">查看全部效率工具 →</a>
