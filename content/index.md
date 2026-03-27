@@ -40,6 +40,10 @@ cssclasses:
     <p>自托管 AI 网关的安装配置和飞书、微信集成</p>
   </div>
   <div class="feature-card">
+    <h3>🛠️ 效率工具</h3>
+    <p>开发效率提升小工具实战指南</p>
+  </div>
+  <div class="feature-card">
     <h3>📝 知识沉淀</h3>
     <p>系统性地学习和总结，分享到社交媒体</p>
   </div>
@@ -114,6 +118,29 @@ OpenClaw 自托管网关的完整指南。
 </div>
 
 <a href="06-OpenClaw/_index" class="button">查看全部 OpenClaw 文档 →</a>
+
+---
+
+## 🛠️ 效率工具 {#tools}
+
+开发中提升效率的小工具集合。
+
+<div class="topic-grid">
+  <div class="topic-card">
+    <h4>🌐 网络工具</h4>
+    <ul>
+      <li><a href="07-效率工具/01-tunnelto.html">tunnelto - 本地服务公网暴露</a></li>
+    </ul>
+  </div>
+  <div class="topic-card">
+    <h4>📁 目录跳转</h4>
+    <ul>
+      <li><a href="07-效率工具/02-zoxide.html">zoxide - 智能目录跳转</a></li>
+    </ul>
+  </div>
+</div>
+
+<a href="07-效率工具/_index" class="button">查看全部效率工具 →</a>
 
 ---
 
