@@ -8,9 +8,21 @@
 
 `@tencent-weixin/openclaw-weixin` 是 OpenClaw 的微信通道插件，支持通过二维码扫码授权登录，让你的微信账号可以直接与 AI 助手对话。
 
+## 版本信息
+
+| 插件版本 | OpenClaw 版本要求 | npm dist-tag |
+|---------|------------------|--------------|
+| **2.x** | >= 2026.3.22 | `latest`（推荐）|
+| 1.x | >= 2026.1.0 < 2026.3.22 | `legacy` |
+
+> ⚠️ 插件启动时会检查宿主版本，如果 OpenClaw 版本超出支持范围，插件将拒绝加载。
+
+**当前最新版本：2.1.1**（发布于 2026-03-27）
+
 ## 前置要求
 
 - 已安装 OpenClaw（`openclaw` CLI 可用）
+- Node.js >= 22
 - 一个微信账号
 
 ## 安装步骤
@@ -85,6 +97,36 @@ openclaw config set agents.mode per-channel-per-peer
 
 删除插件目录下的认证文件即可（具体路径取决于 OpenClaw 数据目录）。
 
+### Q: 提示 "requires OpenClaw >=2026.3.22" 报错？
+
+你的 OpenClaw 版本太旧，不兼容当前插件版本。检查版本：
+
+```bash
+openclaw --version
+```
+
+如果版本低于 2026.3.22，需要升级 OpenClaw 或安装旧版插件：
+
+```bash
+openclaw plugins install @tencent-weixin/openclaw-weixin@legacy
+```
+
+### Q: Channel 显示 "OK" 但未连接？
+
+确保 `~/.openclaw/openclaw.json` 中 `plugins.entries.openclaw-weixin.enabled` 为 `true`：
+
+```bash
+openclaw config set plugins.entries.openclaw-weixin.enabled true
+openclaw gateway restart
+```
+
+## 卸载插件
+
+```bash
+openclaw openclaw-weixin uninstall
+```
+
 ---
 
-*文档更新时间：2026-03-22*
+*文档更新时间：2026-03-29*
+*插件版本：2.1.1*
