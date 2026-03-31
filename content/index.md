@@ -84,7 +84,7 @@ Cursor 核心功能和使用技巧的系统化总结。
   </div>
 </div>
 
-<a href="Cursor/_index" class="button">查看全部 Cursor 文档 →</a>
+<a href="Cursor/" class="button">查看全部 Cursor 文档 →</a>
 
 ---
 
@@ -117,7 +117,7 @@ OpenClaw 自托管网关的完整指南。
   </div>
 </div>
 
-<a href="OpenClaw/_index" class="button">查看全部 OpenClaw 文档 →</a>
+<a href="OpenClaw/" class="button">查看全部 OpenClaw 文档 →</a>
 
 ---
 
@@ -146,7 +146,7 @@ OpenClaw 自托管网关的完整指南。
   </div>
 </div>
 
-<a href="效率工具/_index" class="button">查看全部效率工具 →</a>
+<a href="效率工具/" class="button">查看全部效率工具 →</a>
 
 ---
 

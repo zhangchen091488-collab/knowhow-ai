@@ -4,9 +4,9 @@
 
 ## 目录
 
-- [[01-tunnelto.html]] — 本地服务公网暴露
-- [[02-zoxide.html]] — 智能目录跳转
-- [[03-carbonyl.html]] — 终端浏览器
+- [[01-tunnelto]] — 本地服务公网暴露
+- [[02-zoxide]] — 智能目录跳转
+- [[03-carbonyl]] — 终端浏览器
 
 ## 工具列表
 
