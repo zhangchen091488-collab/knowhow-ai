@@ -1,0 +1,223 @@
+{
+  "main": {
+    "id": "a4c7e5cdeecaf4a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "d121643f5357d7ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "de370abb6dd26594",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cursor/01-基础/01-Cursor入门.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01-Cursor入门"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4e95f6d8c723f54d",
+    "type": "split",
+    "children": [
+      {
+        "id": "17db1c79924c48aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "697dc14a98e309e9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "204f7f784a3b082f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "850ce2c33420ddc4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ec5e72e7654af608",
+    "type": "split",
+    "children": [
+      {
+        "id": "58913f058183dabf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "16d6ab3784db8e79",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "07-效率工具/01-tunnelto.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "01-tunnelto 的反向链接列表"
+            }
+          },
+          {
+            "id": "51ccbd099eaa79f0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "07-效率工具/01-tunnelto.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "01-tunnelto 的出链列表"
+            }
+          },
+          {
+            "id": "1a50d7bab741072b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "0b99f52e8dfa2414",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "9b1602e1d7a31141",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "07-效率工具/01-tunnelto.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "01-tunnelto 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "697dc14a98e309e9",
+  "lastOpenFiles": [
+    "效率工具/_index.md",
+    "效率工具/03-carbonyl.md",
+    "效率工具/02-zoxide.md",
+    "效率工具/01-tunnelto.md",
+    "效率工具",
+    "OpenClaw/_index.md",
+    "OpenClaw/08-Agent-Architecture.md",
+    "OpenClaw/07-OpenClaw 微信插件使用指南.md",
+    "OpenClaw/06-OpenClaw 飞书插件使用指南.md",
+    "OpenClaw/05-OpenClaw 架构概念.md",
+    "OpenClaw/04-OpenClaw CLI 参考.md",
+    "OpenClaw/03-OpenClaw 配置指南.md",
+    "OpenClaw/02-OpenClaw 安装方法.md",
+    "OpenClaw/01-OpenClaw 快速入门.md",
+    "OpenClaw/00-OpenClaw 文档索引.md",
+    "OpenClaw",
+    "Assets/welcome.png",
+    "Assets/test-export.png",
+    "Assets/skills5.jpg",
+    "Assets/skills4.jpg",
+    "Assets/skills3.jpg",
+    "Assets/skills2.jpg",
+    "Assets/skills1.jpg",
+    "Assets/showcase-workflow.png",
+    "Assets/showcase-usecases.png",
+    "Assets/showcase-themes.png",
+    "Assets/custom-styles.css",
+    "Assets",
+    "Cursor/01-基础/_index.md",
+    "index.md",
+    "07-效率工具/01-tunnelto.md",
+    "07-效率工具/02-zoxide.md",
+    "07-效率工具/03-carbonyl.md"
+  ]
+}

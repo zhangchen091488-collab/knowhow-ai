@@ -101,7 +101,7 @@ s.save("path/to/diagram.excalidraw")
 在 Obsidian 笔记中，可以直接链接：
 
 ```markdown
-![架构图](../03-实战/mobile-architecture.excalidraw)
+![架构图](../实战/mobile-architecture.excalidraw)
 ```
 
 或者使用 Quartz 的语法：

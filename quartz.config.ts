@@ -29,7 +29,7 @@ const config: QuartzConfig = {
         code: "IBM Plex Mono",
       },
       css: {
-        customCss: ["05-Assets/custom-styles.css"],
+        customCss: ["Assets/custom-styles.css"],
       },
       colors: {
         lightMode: {

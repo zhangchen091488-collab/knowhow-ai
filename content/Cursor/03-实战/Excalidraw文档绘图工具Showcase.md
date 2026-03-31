@@ -7,7 +7,7 @@ tags: [Excalidraw, 文档, 工具, 配色, 展示]
 
 > 为技术文档而生的专业图表生成器
 
-![封面](../05-Assets/showcase-cover.png)
+![封面](../Assets/showcase-cover.png)
 
 ---
 
@@ -24,7 +24,7 @@ tags: [Excalidraw, 文档, 工具, 配色, 展示]
 
 ## 🎨 主题展示
 
-![主题对比](../05-Assets/showcase-themes.png)
+![主题对比](../Assets/showcase-themes.png)
 
 ### 主题列表
 
@@ -49,7 +49,7 @@ tags: [Excalidraw, 文档, 工具, 配色, 展示]
 
 ## 📋 典型使用场景
 
-![使用场景](../05-Assets/showcase-usecases.png)
+![使用场景](../Assets/showcase-usecases.png)
 
 ### 1. 系统架构图
 
@@ -75,19 +75,19 @@ tags: [Excalidraw, 文档, 工具, 配色, 展示]
 
 ### 1. 系统架构图
 
-![系统架构图](../05-Assets/showcase-architecture.png)
+![系统架构图](../Assets/showcase-architecture.png)
 
 展示 Web App、Mobile、API Gateway、PostgreSQL、Redis、S3 的完整架构。
 
 ### 2. 流程图
 
-![流程图](../05-Assets/showcase-workflow.png)
+![流程图](../Assets/showcase-workflow.png)
 
 展示条件判断分支的经典流程图。
 
 ### 3. 对比图
 
-![对比图](../05-Assets/showcase-comparison.png)
+![对比图](../Assets/showcase-comparison.png)
 
 直观对比传统开发与 AI 辅助开发的差异。
 
@@ -127,7 +127,7 @@ s.save("diagram.excalidraw")
 ### 在文档中使用
 
 ```markdown
-![我的架构图](../05-Assets/my-diagram.png)
+![我的架构图](../Assets/my-diagram.png)
 ```
 
 > 💡 **提示**：推荐导出 PNG 格式嵌入文档，网页兼容性更好。
@@ -170,6 +170,6 @@ s.save("diagram.excalidraw")
 
 ---
 
-![页脚](../05-Assets/showcase-footer.png)
+![页脚](../Assets/showcase-footer.png)
 
 *让文档更美观，让知识更易懂* ✨

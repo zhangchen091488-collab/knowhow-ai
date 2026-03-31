@@ -354,7 +354,7 @@ npx quartz build --serve
 
 ### Q4：如何自定义主题？
 
-编辑 `quartz.config.ts` 中的 `theme` 配置，或修改 `05-Assets/custom-styles.css`。
+编辑 `quartz.config.ts` 中的 `theme` 配置，或修改 `Assets/custom-styles.css`。
 
 ### Q5：能绑定多个域名吗？
 
