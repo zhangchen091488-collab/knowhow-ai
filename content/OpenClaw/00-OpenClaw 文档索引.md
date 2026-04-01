@@ -17,6 +17,7 @@ title: "OpenClaw 安装配置指南"
 - [[05-OpenClaw 架构概念]] - 核心概念和架构说明
 - [[06-OpenClaw 飞书插件使用指南]] - 飞书消息收发配置
 - [[07-OpenClaw 微信插件使用指南]] - 微信消息收发配置
+- [[08-OpenClaw 多 Agent 架构]] - 多 Agent 架构与工作空间隔离
 
 ---
 
