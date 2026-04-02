@@ -10,41 +10,45 @@ title: "OpenClaw 安装配置指南"
 
 ## 📚 文档索引
 
-- [[01-OpenClaw 快速入门]] - 从零开始安装和配置
-- [[02-OpenClaw 安装方法]] - 详细安装方法和系统要求
-- [[03-OpenClaw 配置指南]] - 配置文件详解和常用任务
-- [[04-OpenClaw CLI 参考]] - 命令行工具使用
-- [[05-OpenClaw 架构概念]] - 核心概念和架构说明
-- [[06-OpenClaw 飞书插件使用指南]] - 飞书消息收发配置
-- [[07-OpenClaw 微信插件使用指南]] - 微信消息收发配置
-- [[08-OpenClaw 多 Agent 架构]] - 多 Agent 架构与工作空间隔离
+| 文档 | 说明 | 难度 |
+|------|------|:----:|
+| [[01-OpenClaw 快速入门]] | 从零开始，5 分钟搭建可用网关 | ⭐ |
+| [[02-OpenClaw 安装方法]] | 详细安装方法和系统要求 | ⭐ |
+| [[03-OpenClaw 配置指南]] | 配置文件详解和常用任务 | ⭐⭐ |
+| [[04-OpenClaw CLI 参考]] | 命令行工具完整参考 | ⭐⭐ |
+| [[05-OpenClaw 架构概念]] | 核心概念和架构说明 | ⭐⭐ |
+| [[06-OpenClaw 飞书插件使用指南]] | 飞书消息收发配置 | ⭐⭐ |
+| [[07-OpenClaw 微信插件使用指南]] | 微信消息收发配置 | ⭐⭐ |
+| [[08-OpenClaw 多 Agent 架构]] | 多 Agent 架构与工作空间隔离 | ⭐⭐⭐ |
 
 ---
 
 ## 🚀 快速开始
 
-### 1. 安装 OpenClaw
+### 安装 OpenClaw
 
-**macOS / Linux / WSL2:**
 ```bash
+# macOS / Linux / WSL2
 curl -fsSL https://openclaw.ai/install.sh | bash
-```
 
-**Windows (PowerShell):**
-```powershell
+# Windows (PowerShell)
 iwr -useb https://openclaw.ai/install.ps1 | iex
 ```
 
-### 2. 运行向导
+### 运行配置向导
+
 ```bash
 openclaw onboard --install-daemon
 ```
 
-### 3. 检查状态
+### 启动网关
+
 ```bash
 openclaw gateway status
 openclaw dashboard  # 打开浏览器控制 UI
 ```
+
+> 访问 http://127.0.0.1:18789 打开控制台
 
 ---
 
@@ -52,19 +56,41 @@ openclaw dashboard  # 打开浏览器控制 UI
 
 | 能力 | 说明 |
 |------|------|
-| **多通道网关** | WhatsApp、Telegram、Discord、iMessage 等 |
-| **多代理路由** | 隔离的工作空间和会话 |
-| **媒体支持** | 图片、音频、文档 |
-| **Web 控制 UI** | 浏览器仪表盘 |
-| **移动端节点** | iOS/Android 节点支持 |
+| 🌐 **多通道网关** | WhatsApp、Telegram、Discord、iMessage 等 |
+| 🤖 **多代理路由** | 隔离的工作空间和会话 |
+| 🖼️ **媒体支持** | 图片、音频、文档 |
+| 🖥️ **Web 控制 UI** | 浏览器仪表盘 |
+| 📱 **移动端节点** | iOS/Android 节点支持 |
 
 ---
 
 ## 📖 官方文档
 
-- **官方文档:** https://docs.openclaw.ai
-- **GitHub:** https://github.com/openclaw/openclaw
-- **Discord:** https://discord.com/invite/clawd
+| 资源 | 链接 |
+|------|------|
+| �_docs **官方文档** | https://docs.openclaw.ai |
+| 🐙 **GitHub** | https://github.com/openclaw/openclaw |
+| 💬 **Discord** | https://discord.com/invite/clawd |
+
+---
+
+## 📂 文档分类
+
+### 🆕 入门系列
+- [[01-OpenClaw 快速入门]] — 5 分钟快速上手
+- [[02-OpenClaw 安装方法]] — 详细安装指南
+
+### ⚙️ 配置系列
+- [[03-OpenClaw 配置指南]] — 配置文件完全解析
+- [[04-OpenClaw CLI 参考]] — CLI 命令大全
+
+### 📖 概念系列
+- [[05-OpenClaw 架构概念]] — 核心概念解读
+
+### 🔌 插件系列
+- [[06-OpenClaw 飞书插件使用指南]] — 飞书接入
+- [[07-OpenClaw 微信插件使用指南]] — 微信接入
+- [[08-OpenClaw 多 Agent 架构]] — 多 Agent 设计
 
 ---
 

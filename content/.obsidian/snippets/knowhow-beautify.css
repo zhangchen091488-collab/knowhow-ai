@@ -1,0 +1,232 @@
+/* ============================================
+   Knowhow AI - 自定义样式增强
+   ============================================ */
+
+/* 高亮标记 - 用于强调重要内容 */
+.mark-highlight {
+  background-color: #fef3c7;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* 步骤指示器 - 用于教程类文章 */
+.step-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* 难度星级 */
+.difficulty-easy { color: #22c55e; }
+.difficulty-medium { color: #f59e0b; }
+.difficulty-hard { color: #ef4444; }
+
+/* 引用块增强 - 左侧边框 */
+.markdown-rendered blockquote {
+  border-left: 4px solid #667eea;
+  padding-left: 16px;
+  margin-left: 0;
+  background: linear-gradient(to right, #f8fafc, transparent);
+}
+
+/* 代码块标题样式 */
+.code-block-wrapper {
+  position: relative;
+  margin: 16px 0;
+}
+
+.code-block-wrapper pre {
+  margin-top: 0;
+  border-radius: 0 8px 8px 8px;
+}
+
+.code-block-wrapper .code-title {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 8px 16px;
+  border-radius: 8px 8px 0 0;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 13px;
+  border-bottom: 1px solid #334155;
+}
+
+/* 表格增强 - 交替行颜色 */
+.markdown-rendered table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.markdown-rendered table th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.markdown-rendered table td {
+  padding: 10px 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.markdown-rendered table tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.markdown-rendered table tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* 列表增强 - 子项缩进 */
+.markdown-rendered ul ul,
+.markdown-rendered ol ol,
+.markdown-rendered ul ol,
+.markdown-rendered ol ul {
+  margin-left: 20px;
+}
+
+/* Callout 样式增强 */
+.callout {
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  border-left: 4px solid;
+}
+
+.callout-info {
+  background: #e0f2fe;
+  border-color: #0284c7;
+}
+
+.callout-tip {
+  background: #dcfce7;
+  border-color: #16a34a;
+}
+
+.callout-warning {
+  background: #fef9c3;
+  border-color: #ca8a04;
+}
+
+.callout-danger {
+  background: #fee2e2;
+  border-color: #dc2626;
+}
+
+/* 标签样式 - 用于分类 */
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 2px;
+}
+
+/* 时间线样式 */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #667eea, #764ba2);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background: #667eea;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* 卡片网格布局 */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* 键盘快捷键样式 */
+kbd {
+  display: inline-block;
+  padding: 4px 8px;
+  background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  box-shadow: 0 2px 0 #94a3b8;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #475569;
+}
+
+/* 进度条样式 */
+.progress-bar {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
