@@ -37,9 +37,8 @@ OpenClaw 的配置文件位于 `~/.openclaw/openclaw.json` (JSON5 格式)。
 | **控制 UI** | http://127.0.0.1:18789 → Config 标签 |
 | **直接编辑** | 编辑 `~/.openclaw/openclaw.json` |
 
-<Info>
-配置文件支持热重载！大多数修改无需重启网关。
-</Info>
+> [!tip]
+> 配置文件支持热重载！大多数修改无需重启网关。
 
 ---
 

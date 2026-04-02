@@ -1,19 +1,25 @@
 # zoxide
 
-智能目录跳转工具，用 Rust 编写的 `cd` 替代品。
+> 智能目录跳转工具，用 Rust 编写的 `cd` 替代品
 
-## 核心功能
+---
+
+## :zap: 核心功能
 
 - 记录你经常访问的目录
 - 通过简短的名字快速跳转
 - 模糊匹配，智能排序
 - 支持所有主流 Shell
 
-## 工作原理
+---
 
-zoxide 会记录每次 `cd` 操作到指定目录的上下文（访问次数、时间、路径深度），建立一个加权评分数据库。当你输入 `z <目录名>` 时，它根据评分算法返回最匹配的目录并自动跳转。
+## :gear: 工作原理
 
-## 安装
+> zoxide 会记录每次 `cd` 操作到指定目录的上下文（访问次数、时间、路径深度），建立一个加权评分数据库。当你输入 `z <目录名>` 时，它根据评分算法返回最匹配的目录并自动跳转。
+
+---
+
+## :package: 安装
 
 ```bash
 # macOS
@@ -26,7 +32,9 @@ curl -Ls https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | 
 pacman -S zoxide
 ```
 
-## 初始化配置
+---
+
+## :wrench: 初始化配置
 
 将以下内容添加到 Shell 配置文件（`.zshrc` / `.bashrc`）：
 
@@ -38,12 +46,11 @@ eval "$(zoxide init zsh)"
 eval "$(zoxide init bash)"
 ```
 
-然后重新加载配置：
-```bash
-source ~/.zshrc
-```
+> 然后重新加载配置：`source ~/.zshrc`
 
-## 使用方式
+---
+
+## :keyboard: 使用方式
 
 ### 基本跳转
 
@@ -71,20 +78,17 @@ zq doc
 
 ### 其他命令
 
-```bash
-# 显示数据库记录
-zoxide query doc
+| 命令 | 说明 |
+|------|------|
+| `zoxide query doc` | 显示数据库记录 |
+| `zoxide add /path/to/dir` | 添加路径到数据库（不跳转） |
+| `zoxide remove /path/to/dir` | 移除路径记录 |
 
-# 添加路径到数据库（不跳转）
-zoxide add /path/to/dir
+---
 
-# 移除路径记录
-zoxide remove /path/to/dir
-```
+## :chart_with_upwards_trend: 评分算法
 
-## 评分算法
-
-zoxide 使用加权评分，综合考虑：
+> zoxide 使用加权评分，综合考虑以下因素：
 
 | 因素 | 说明 |
 |------|------|
@@ -92,25 +96,33 @@ zoxide 使用加权评分，综合考虑：
 | 近期性 | 最近访问的目录优先 |
 | 深度 | 路径越深权重越高（减少与根目录冲突） |
 
-这使得 `z doc` 会跳转到 `/Users/zhangchen/Documents` 而不是 `/Documents`。
+> 这使得 `z doc` 会跳转到 `/Users/zhangchen/Documents` 而不是 `/Documents`。
 
-## 适用场景
+---
 
-1. **频繁切换深层目录** — 不用再打完整路径
-2. **项目目录跳转** — 在多个项目间切换
-3. **减少重复 cd** — 在长路径目录间移动
-4. **替代 autojump** — 更快的 Rust 实现，更好的跨平台支持
+## :bulb: 适用场景
 
-## 与 autojump 对比
+| 场景 | 说明 |
+|------|------|
+| 频繁切换深层目录 | 不用再打完整路径 |
+| 项目目录跳转 | 在多个项目间切换 |
+| 减少重复 cd | 在长路径目录间移动 |
+| 替代 autojump | 更快的 Rust 实现，更好的跨平台支持 |
+
+---
+
+## :scales: 与 autojump 对比
 
 | 特性 | zoxide | autojump |
-|------|--------|----------|
+|------|:------:|:--------:|
 | 语言 | Rust | Python |
-| 速度 | 快 | 较慢 |
-| 跨平台 | 完整支持 | 部分支持 |
+| 速度 | :rocket: 快 | :snail: 较慢 |
+| 跨平台 | :white_check_mark: 完整支持 | :warning: 部分支持 |
 | 算法 | 综合评分 | 频率统计 |
 
-## 技巧
+---
+
+## :star: 技巧
 
 ### 配合 fzf 使用
 
@@ -128,6 +140,8 @@ alias cd='z'
 alias cdi='zi'
 ```
 
-## 相关工具
+---
 
-- [[01-tunnelto.html]] — 本地服务公网暴露
+## :link: 相关工具
+
+- [[01-tunnelto]] — 本地服务公网暴露

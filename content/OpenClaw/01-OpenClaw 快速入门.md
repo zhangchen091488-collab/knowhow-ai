@@ -10,13 +10,13 @@ title: "OpenClaw 快速入门"
 
 ## 📋 前提条件
 
-- **Node.js 24** (推荐) 或 Node 22 LTS (`22.16+`)
-- macOS、Linux 或 Windows (推荐 WSL2)
-- 5 分钟时间
+| 要求 | 说明 |
+|------|------|
+| **Node.js** | 24 (推荐) 或 Node 22 LTS (`22.16+`) |
+| **操作系统** | macOS、Linux 或 Windows (推荐 WSL2) |
+| **时间** | 5 分钟 |
 
-<Info>
-检查 Node 版本：`node --version`
-</Info>
+> 检查 Node 版本：`node --version`
 
 ---
 
@@ -68,12 +68,15 @@ openclaw dashboard
 
 ## ✅ 验证成功
 
-如果控制 UI 正常加载，说明网关已经就绪！
+> 如果控制 UI 正常加载，说明网关已经就绪！
 
-现在你可以：
-1. 在浏览器中直接和 AI 对话
-2. 配置 WhatsApp/Telegram/Discord 等通道
-3. 从手机/桌面应用发送消息
+**现在你可以：**
+
+| 操作 | 说明 |
+|------|------|
+| 在浏览器中直接和 AI 对话 | http://127.0.0.1:18789 |
+| 配置 WhatsApp/Telegram/Discord 等通道 | 参考 [[06-OpenClaw 飞书插件使用指南]] |
+| 从手机/桌面应用发送消息 | 下载对应 App 并配对 |
 
 ---
 

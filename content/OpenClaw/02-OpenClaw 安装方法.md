@@ -16,9 +16,8 @@ title: "OpenClaw 安装方法"
 | **操作系统** | macOS、Linux、Windows (推荐 WSL2) |
 | **包管理器** | `pnpm` (仅源码构建需要) |
 
-<Warning>
-Windows 用户强烈建议使用 [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install)
-</Warning>
+> [!warning]
+> Windows 用户强烈建议使用 [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 ---
 
