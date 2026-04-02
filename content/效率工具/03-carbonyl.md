@@ -4,13 +4,13 @@
 
 ---
 
-## :crossed_swords: 核心定位
+## ⚔️ 核心定位
 
 > Carbonyl 是一个专为命令行环境设计的 Chromium 浏览器，完全在无 GUI 的服务器或终端环境中运行。区别于传统"无头浏览器"，它支持完整的 CSS 动画、JavaScript 执行，甚至可以用 ASCII 字符在终端渲染页面。
 
 ---
 
-## :rocket: 技术特点
+## 🚀 技术特点
 
 ### 性能优异
 
@@ -40,7 +40,7 @@ carbonyl --ascii https://example.com
 
 ---
 
-## :package: 安装方式
+## 📦 安装方式
 
 ```bash
 # npm 全局安装
@@ -52,7 +52,7 @@ curl -fsSL https://github.com/browser-automation/carbonyl/releases/latest/downlo
 
 ---
 
-## :keyboard: 常用命令
+## ⌨️ 常用命令
 
 ### 基本使用
 
@@ -99,9 +99,9 @@ await browser.close();
 
 ---
 
-## :bulb: 适用场景
+## 💡 适用场景
 
-### :white_check_mark: 适合的场景
+### ✅ 适合的场景
 
 | 场景 | 说明 |
 |------|------|
@@ -111,7 +111,7 @@ await browser.close();
 | PDF 生成 | 服务端批量生成报告 |
 | 终端快速预览 | 查看网页而不离开终端 |
 
-### :x: 不适合的场景
+### ❌ 不适合的场景
 
 - 需要完整浏览器交互（点击、表单提交）
 - 复杂的多页面自动化流程
@@ -119,19 +119,19 @@ await browser.close();
 
 ---
 
-## :scales: 对比其他工具
+## ⚖️ 对比其他工具
 
 | 特性 | Carbonyl | Puppeteer | Playwright |
 |------|:--------:|:---------:|:----------:|
-| 启动速度 | :rocket: 快 | :snail: 中等 | :snail: 中等 |
+| 启动速度 | 🚀 快 | 🐌 中等 | 🐌 中等 |
 | 语言生态 | 多语言 | Node.js | 多语言 |
 | 功能完整度 | 基础为主 | 完整 | 最完整 |
-| 终端渲染 | :white_check_mark: | :x: | :x: |
-| 安装便捷性 | :star::star::star: | :star::star: | :star::star: |
+| 终端渲染 | ✅ | ❌ | ❌ |
+| 安装便捷性 | ⭐⭐⭐ | ⭐⭐ | ⭐⭐ |
 
 ---
 
-## :wrench: 实际应用示例
+## 🔧 实际应用示例
 
 ### 快速搭建截图 API
 
@@ -157,7 +157,7 @@ done < urls.txt
 
 ---
 
-## :warning: 注意事项
+## ⚠️ 注意事项
 
 > - Carbonyl 仍处于活跃开发中，API 可能会有变化
 > - 部分复杂的 WebGL 特性可能不支持
@@ -165,7 +165,7 @@ done < urls.txt
 
 ---
 
-## :link: 相关工具
+## 🔗 相关工具
 
 - [[01-tunnelto]] — 本地服务公网暴露
 - [[02-zoxide]] — 智能目录跳转
