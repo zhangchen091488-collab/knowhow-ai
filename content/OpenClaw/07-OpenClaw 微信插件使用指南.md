@@ -2,7 +2,7 @@
 
 > 让小龙虾（OpenClaw）通过微信与你沟通
 
-[[00-OpenClaw 文档索引|返回文档索引]]
+[[OpenClaw/_index|返回文档索引]]
 
 ## 概述
 

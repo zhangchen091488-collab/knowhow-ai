@@ -68,7 +68,7 @@ openclaw dashboard  # 打开浏览器控制 UI
 
 | 资源 | 链接 |
 |------|------|
-| �_docs **官方文档** | https://docs.openclaw.ai |
+| 📚 **官方文档** | https://docs.openclaw.ai |
 | 🐙 **GitHub** | https://github.com/openclaw/openclaw |
 | 💬 **Discord** | https://discord.com/invite/clawd |
 
