@@ -59,9 +59,8 @@ tags: [OpenClaw, 飞书，插件，教程]
 - ✅ 话题群独立上下文
 - ✅ 多任务并行处理
 
-<Warning>
-以用户身份发消息需在飞书开放平台额外开通机器人 `im:message.send_as_user` 权限，部分企业（如字节）不支持此操作。
-</Warning>
+> [!warning]
+> 以用户身份发消息需在飞书开放平台额外开通机器人 `im:message.send_as_user` 权限，部分企业（如字节）不支持此操作。
 
 ---
 
@@ -86,6 +85,20 @@ tags: [OpenClaw, 飞书，插件，教程]
 ---
 
 ## 四、安装步骤
+
+```mermaid
+flowchart TD
+    A[开始安装] --> B[步骤一<br/>安装 OpenClaw]
+    B --> C[步骤二<br/>安装飞书插件]
+    C --> D[步骤三<br/>用户授权]
+    D --> E[步骤四<br/>更新插件]
+    E --> F[✅ 完成]
+
+    C --> D
+
+    style A fill:#e3f2fd,stroke:#1976d2
+    style F fill:#e8f5e9,stroke:#388e3c
+```
 
 ### 步骤一：安装 OpenClaw
 
@@ -175,9 +188,8 @@ openclaw config set channels.feishu.requireMention true --json
 openclaw config set channels.feishu.requireMention false --json
 ```
 
-<Warning>
-需要申请敏感权限 `im:message.group_msg`，大群容易刷屏，谨慎使用！
-</Warning>
+> [!warning]
+> 需要申请敏感权限 `im:message.group_msg`，大群容易刷屏，谨慎使用！
 
 #### 模式 3：特定群 @才回复
 

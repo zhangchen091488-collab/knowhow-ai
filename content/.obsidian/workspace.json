@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cursor/01-基础/01-Cursor入门.md",
+                "file": "OpenClaw/08-OpenClaw 多 Agent 架构.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-Cursor入门"
+              "title": "08-OpenClaw 多 Agent 架构"
             }
           }
         ]
@@ -186,8 +186,12 @@
   },
   "active": "697dc14a98e309e9",
   "lastOpenFiles": [
-    "Cursor/Cursor.md",
+    "Assets/Pose.vroidpose",
+    "Assets/XiaoYo.vrm",
     "OpenClaw/OpenClaw.md",
+    "OpenClaw/08-OpenClaw 多 Agent 架构.md",
+    "Cursor/01-基础/01-Cursor入门.md",
+    "Cursor/Cursor.md",
     "效率工具/效率工具.md",
     "效率工具/_index.md",
     "效率工具/03-carbonyl.md",
@@ -195,7 +199,6 @@
     "效率工具/01-tunnelto.md",
     "效率工具",
     "OpenClaw/_index.md",
-    "OpenClaw/08-Agent-Architecture.md",
     "OpenClaw/07-OpenClaw 微信插件使用指南.md",
     "OpenClaw/06-OpenClaw 飞书插件使用指南.md",
     "OpenClaw/05-OpenClaw 架构概念.md",

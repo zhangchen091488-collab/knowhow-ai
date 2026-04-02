@@ -27,6 +27,20 @@
 
 ## 安装步骤
 
+```mermaid
+flowchart TD
+    A[开始安装] --> B{选择安装方式}
+    B -->|快速安装| C[npx 安装命令]
+    B -->|手动安装| D[openclaw plugins install]
+    C --> E[二维码扫码授权]
+    D --> E
+    E --> F[重启 Gateway]
+    F --> G[✅ 完成]
+
+    style A fill:#e3f2fd,stroke:#1976d2
+    style G fill:#e8f5e9,stroke:#388e3c
+```
+
 ### 方式一：快速安装（推荐）
 
 ```bash

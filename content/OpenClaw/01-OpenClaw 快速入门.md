@@ -22,6 +22,23 @@ title: "OpenClaw 快速入门"
 
 ## 🔧 快速安装 (4 步)
 
+```mermaid
+flowchart TD
+    A[开始] --> B[Step 1<br/>安装 OpenClaw]
+    B --> C[Step 2<br/>运行配置向导]
+    C --> D[Step 3<br/>检查网关状态]
+    D --> E{状态正常?}
+    E -->|是| F[Step 4<br/>打开控制 UI]
+    E -->|否| G[运行诊断]
+    G --> D
+    F --> H[✅ 完成]
+
+    style A fill:#e3f2fd,stroke:#1976d2
+    style F fill:#e8f5e9,stroke:#388e3c
+    style H fill:#e8f5e9,stroke:#388e3c
+    style G fill:#fff3e0,stroke:#f57c00
+```
+
 ### Step 1: 安装 OpenClaw
 
 **macOS / Linux / WSL2:**
