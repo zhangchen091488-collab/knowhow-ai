@@ -2,7 +2,7 @@
 title: "OpenClaw 安装配置指南"
 ---
 
-# 🦞 OpenClaw 安装配置指南
+# 🦞 OpenClaw
 
 > OpenClaw 是一个自托管网关，连接 WhatsApp、Telegram、Discord、iMessage 等聊天应用到 AI 编程助手。
 
@@ -12,14 +12,14 @@ title: "OpenClaw 安装配置指南"
 
 | 文档 | 说明 | 难度 |
 |------|------|:----:|
-| [[01-OpenClaw 快速入门]] | 从零开始，5 分钟搭建可用网关 | ⭐ |
-| [[02-OpenClaw 安装方法]] | 详细安装方法和系统要求 | ⭐ |
-| [[03-OpenClaw 配置指南]] | 配置文件详解和常用任务 | ⭐⭐ |
-| [[04-OpenClaw CLI 参考]] | 命令行工具完整参考 | ⭐⭐ |
-| [[05-OpenClaw 架构概念]] | 核心概念和架构说明 | ⭐⭐ |
-| [[06-OpenClaw 飞书插件使用指南]] | 飞书消息收发配置 | ⭐⭐ |
-| [[07-OpenClaw 微信插件使用指南]] | 微信消息收发配置 | ⭐⭐ |
-| [[08-OpenClaw 多 Agent 架构]] | 多 Agent 架构与工作空间隔离 | ⭐⭐⭐ |
+| [[OpenClaw 快速入门]] | 从零开始，5 分钟搭建可用网关 | ⭐ |
+| [[OpenClaw 安装方法]] | 详细安装方法和系统要求 | ⭐ |
+| [[OpenClaw 配置指南]] | 配置文件详解和常用任务 | ⭐⭐ |
+| [[OpenClaw CLI 参考]] | 命令行工具完整参考 | ⭐⭐ |
+| [[OpenClaw 架构概念]] | 核心概念和架构说明 | ⭐⭐ |
+| [[OpenClaw 飞书插件使用指南]] | 飞书消息收发配置 | ⭐⭐ |
+| [[OpenClaw 微信插件使用指南]] | 微信消息收发配置 | ⭐⭐ |
+| [[OpenClaw 多 Agent 架构]] | 多 Agent 架构与工作空间隔离 | ⭐⭐⭐ |
 
 ---
 
@@ -77,20 +77,20 @@ openclaw dashboard  # 打开浏览器控制 UI
 ## 📂 文档分类
 
 ### 🆕 入门系列
-- [[01-OpenClaw 快速入门]] — 5 分钟快速上手
-- [[02-OpenClaw 安装方法]] — 详细安装指南
+- [[OpenClaw 快速入门]] — 5 分钟快速上手
+- [[OpenClaw 安装方法]] — 详细安装指南
 
 ### ⚙️ 配置系列
-- [[03-OpenClaw 配置指南]] — 配置文件完全解析
-- [[04-OpenClaw CLI 参考]] — CLI 命令大全
+- [[OpenClaw 配置指南]] — 配置文件完全解析
+- [[OpenClaw CLI 参考]] — CLI 命令大全
 
 ### 📖 概念系列
-- [[05-OpenClaw 架构概念]] — 核心概念解读
+- [[OpenClaw 架构概念]] — 核心概念解读
 
 ### 🔌 插件系列
-- [[06-OpenClaw 飞书插件使用指南]] — 飞书接入
-- [[07-OpenClaw 微信插件使用指南]] — 微信接入
-- [[08-OpenClaw 多 Agent 架构]] — 多 Agent 设计
+- [[OpenClaw 飞书插件使用指南]] — 飞书接入
+- [[OpenClaw 微信插件使用指南]] — 微信接入
+- [[OpenClaw 多 Agent 架构]] — 多 Agent 设计
 
 ---
 

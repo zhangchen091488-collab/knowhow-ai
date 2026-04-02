@@ -92,4 +92,4 @@ tunnelto --help
 
 ## 🔗 相关工具
 
-- [[02-zoxide]] — 智能目录跳转
+- [[zoxide]] — 智能目录跳转

@@ -309,7 +309,7 @@ npx -y @larksuite/openclaw-lark-tools install
 
 - [OpenClaw 飞书官方插件使用指南（公开版）](https://bytedance.larkoffice.com/docx/MFK7dDFLFoVlOGxWCv5cTXKmnMh)
 - [OpenClaw 官方文档](https://docs.openclaw.ai/)
-- [[01-OpenClaw 快速入门]]
+- [[OpenClaw 快速入门]]
 
 ### 相关文章
 

@@ -59,7 +59,7 @@ Cursor 核心功能和使用技巧的系统化总结。
   <div class="topic-card">
     <h4>📘 基础篇</h4>
     <ul>
-      <li><a href="Cursor/01-基础/01-Cursor入门.html">快速上手 Cursor</a></li>
+      <li><a href="Cursor/01-基础/Cursor入门.html">快速上手 Cursor</a></li>
     </ul>
   </div>
   <div class="topic-card">
@@ -96,23 +96,23 @@ OpenClaw 自托管网关的完整指南。
   <div class="topic-card">
     <h4>🚀 快速开始</h4>
     <ul>
-      <li><a href="OpenClaw/01-OpenClaw 快速入门.html">4 步快速安装</a></li>
-      <li><a href="OpenClaw/02-OpenClaw 安装方法.html">详细安装方式</a></li>
+      <li><a href="OpenClaw/OpenClaw 快速入门.html">4 步快速安装</a></li>
+      <li><a href="OpenClaw/OpenClaw 安装方法.html">详细安装方式</a></li>
     </ul>
   </div>
   <div class="topic-card">
     <h4>⚙️ 配置指南</h4>
     <ul>
-      <li><a href="OpenClaw/03-OpenClaw 配置指南.html">配置文件详解</a></li>
-      <li><a href="OpenClaw/04-OpenClaw CLI 参考.html">CLI 工具参考</a></li>
+      <li><a href="OpenClaw/OpenClaw 配置指南.html">配置文件详解</a></li>
+      <li><a href="OpenClaw/OpenClaw CLI 参考.html">CLI 工具参考</a></li>
     </ul>
   </div>
   <div class="topic-card">
     <h4>🔧 进阶使用</h4>
     <ul>
-      <li><a href="OpenClaw/05-OpenClaw 架构概念.html">架构说明</a></li>
-      <li><a href="OpenClaw/06-OpenClaw 飞书插件使用指南.html">飞书集成</a></li>
-      <li><a href="OpenClaw/07-OpenClaw 微信插件使用指南.html">微信集成</a></li>
+      <li><a href="OpenClaw/OpenClaw 架构概念.html">架构说明</a></li>
+      <li><a href="OpenClaw/OpenClaw 飞书插件使用指南.html">飞书集成</a></li>
+      <li><a href="OpenClaw/OpenClaw 微信插件使用指南.html">微信集成</a></li>
     </ul>
   </div>
 </div>
@@ -129,19 +129,19 @@ OpenClaw 自托管网关的完整指南。
   <div class="topic-card">
     <h4>🌐 网络工具</h4>
     <ul>
-      <li><a href="效率工具/01-tunnelto.html">tunnelto - 本地服务公网暴露</a></li>
+      <li><a href="效率工具/tunnelto.html">tunnelto - 本地服务公网暴露</a></li>
     </ul>
   </div>
   <div class="topic-card">
     <h4>📁 目录跳转</h4>
     <ul>
-      <li><a href="效率工具/02-zoxide.html">zoxide - 智能目录跳转</a></li>
+      <li><a href="效率工具/zoxide.html">zoxide - 智能目录跳转</a></li>
     </ul>
   </div>
   <div class="topic-card">
     <h4>🖥️ 终端浏览器</h4>
     <ul>
-      <li><a href="效率工具/03-carbonyl.html">carbonyl - 服务端 Chromium</a></li>
+      <li><a href="效率工具/carbonyl.html">carbonyl - 服务端 Chromium</a></li>
     </ul>
   </div>
 </div>

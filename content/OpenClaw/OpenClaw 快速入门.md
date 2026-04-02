@@ -92,7 +92,7 @@ openclaw dashboard
 | 操作 | 说明 |
 |------|------|
 | 在浏览器中直接和 AI 对话 | http://127.0.0.1:18789 |
-| 配置 WhatsApp/Telegram/Discord 等通道 | 参考 [[06-OpenClaw 飞书插件使用指南]] |
+| 配置 WhatsApp/Telegram/Discord 等通道 | 参考 [[OpenClaw 飞书插件使用指南]] |
 | 从手机/桌面应用发送消息 | 下载对应 App 并配对 |
 
 ---
@@ -130,8 +130,8 @@ openclaw doctor  # 检查配置问题
 
 ## 📚 下一步
 
-- [[02-OpenClaw 安装方法]] - 其他安装方式和详细要求
-- [[03-OpenClaw 配置指南]] - 配置文件详解
+- [[OpenClaw 安装方法]] - 其他安装方式和详细要求
+- [[OpenClaw 配置指南]] - 配置文件详解
 - [官方文档 - 配置向导](https://docs.openclaw.ai/start/wizard)
 
 ---

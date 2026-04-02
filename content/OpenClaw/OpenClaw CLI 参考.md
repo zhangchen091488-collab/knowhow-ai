@@ -137,8 +137,8 @@ openclaw logs --tail 100
 
 ## 📚 相关文档
 
-- [[01-OpenClaw 快速入门]] - 快速开始
-- [[03-OpenClaw 配置指南]] - 配置详解
+- [[OpenClaw 快速入门]] - 快速开始
+- [[OpenClaw 配置指南]] - 配置详解
 - [官方 CLI 参考](https://docs.openclaw.ai/cli)
 
 ---

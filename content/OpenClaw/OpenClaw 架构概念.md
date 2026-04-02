@@ -199,8 +199,8 @@ HTTP 端点接收外部事件：
 
 ## 📚 相关文档
 
-- [[01-OpenClaw 快速入门]] - 快速开始
-- [[03-OpenClaw 配置指南]] - 配置详解
+- [[OpenClaw 快速入门]] - 快速开始
+- [[OpenClaw 配置指南]] - 配置详解
 - [官方架构文档](https://docs.openclaw.ai/concepts/architecture)
 
 ---

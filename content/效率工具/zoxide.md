@@ -170,4 +170,4 @@ alias cdi='zi'
 
 ## 🔗 相关工具
 
-- [[01-tunnelto]] — 本地服务公网暴露
+- [[tunnelto]] — 本地服务公网暴露

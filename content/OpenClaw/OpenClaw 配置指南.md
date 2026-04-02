@@ -315,8 +315,8 @@ openclaw gateway call config.apply --params '{...}'
 
 ## 📚 相关文档
 
-- [[01-OpenClaw 快速入门]] - 快速开始
-- [[04-OpenClaw CLI 参考]] - CLI 工具详解
+- [[OpenClaw 快速入门]] - 快速开始
+- [[OpenClaw CLI 参考]] - CLI 工具详解
 - [官方配置参考](https://docs.openclaw.ai/gateway/configuration-reference)
 
 ---
