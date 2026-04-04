@@ -1,5 +1,5 @@
 ---
-title: "🎭 The Agency: AI 专家团队 — 53K Stars 的开源 Agent 宝库"
+title: "06-🎭The Agency: AI 专家团队"
 tags: [AI Agent, Claude Code, Cursor, 开源项目, 工具推荐]
 ---
 

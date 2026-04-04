@@ -1,3 +1,7 @@
+---
+title: "07-💬OpenClaw 微信插件使用指南"
+---
+
 # OpenClaw 微信插件使用指南
 
 > 让小龙虾（OpenClaw）通过微信与你沟通

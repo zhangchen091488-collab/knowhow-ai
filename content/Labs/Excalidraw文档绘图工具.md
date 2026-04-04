@@ -1,5 +1,5 @@
 ---
-title: "🎨 Excalidraw 文档绘图工具 - Showcase"
+title: "01-🎨Excalidraw文档绘图工具"
 tags: [Excalidraw, 文档, 工具, 配色, 展示]
 ---
 
@@ -158,7 +158,7 @@ s.save("diagram.excalidraw")
 
 - **生成器**：`~/.openclaw/skills/excalidraw-generator/scripts/excalidraw_gen.py`
 - **渲染器**：`~/.agents/skills/excalidraw-gen/scripts/render.js`
-- **主题展示**：`knowhow-ai/content/Cursor/03-实战/showcase-*.excalidraw`
+- **主题展示**：`knowhow-ai/content/VibeCoding/05-Assets/showcase-*.excalidraw`
 
 ---
 
@@ -166,10 +166,8 @@ s.save("diagram.excalidraw")
 
 - [Excalidraw 官网](https://excalidraw.com)
 - [Excalidraw 图表在文档中的应用](./Excalidraw图表在文档中的应用)
-- [CLI-Anything-让软件具有Agent原生能力](./CLI-Anything-让软件具有Agent原生能力)
+- [CLI-Anything-让软件具有Agent原生能力](../VibeCoding/CLI-Anything-让软件具有Agent原生能力)
 
 ---
-
-![页脚](../Assets/showcase-footer.png)
 
 *让文档更美观，让知识更易懂* ✨

@@ -1,3 +1,7 @@
+---
+title: "07-⚡CLI-Anything"
+---
+
 # CLI-Anything：让任何软件具有 Agent 原生能力
 
 > 一条命令，让任何软件都可以被 AI 代理控制

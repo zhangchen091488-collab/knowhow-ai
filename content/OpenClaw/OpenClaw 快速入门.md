@@ -1,5 +1,5 @@
 ---
-title: "OpenClaw 快速入门"
+title: "01-🚀OpenClaw 快速入门"
 ---
 
 # 🚀 OpenClaw 快速入门

@@ -1,3 +1,7 @@
+---
+title: "02-📁zoxide"
+---
+
 # zoxide
 
 > 智能目录跳转工具，用 Rust 编写的 `cd` 替代品

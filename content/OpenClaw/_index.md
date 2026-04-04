@@ -1,5 +1,5 @@
 ---
-title: "OpenClaw 安装配置指南"
+title: OpenClaw
 ---
 
 # 🦞 OpenClaw

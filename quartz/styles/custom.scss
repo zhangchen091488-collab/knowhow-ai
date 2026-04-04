@@ -1,3 +1,274 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+/* ============================================
+   Knowhow AI - 温暖自然风格
+   灵感：精装书籍，自然舒适、温暖阅读体验
+   ============================================ */
+
+/* 手写体字体 - 通过 HTML link 标签加载，见 content/Labs/字体展示.md */
+
+/* 手写体文字类 */
+.handwritten-zcool {
+  font-family: 'ZCOOL XiaoWei', serif !important;
+}
+
+.handwritten-mashan {
+  font-family: 'Ma Shan Zheng', cursive !important;
+}
+
+.handwritten-longcang {
+  font-family: 'Long Cang', cursive !important;
+}
+
+.handwritten-zcoolhuangyou {
+  font-family: 'ZCOOL QingKe HuangYou', cursive !important;
+}
+
+.handwritten-caveat {
+  font-family: 'Caveat', cursive !important;
+}
+
+.handwritten-patrick {
+  font-family: 'Patrick Hand', cursive !important;
+}
+
+.handwritten-indie {
+  font-family: 'Indie Flower', cursive !important;
+}
+
+.handwritten-marker {
+  font-family: 'Permanent Marker', cursive !important;
+}
+
+/* 强制温暖米色背景 */
+html, body {
+  background-color: #faf6f1 !important;
+  color: #3d3832 !important;
+}
+
+/* 覆盖 Quartz 变量为温暖色调 */
+body {
+  --light: #faf6f1 !important;
+  --lightgray: #f5efe9 !important;
+  --gray: #8b8478 !important;
+  --darkgray: #6b635a !important;
+  --dark: #3d3832 !important;
+  --secondary: #c4785a !important;
+  --tertiary: #8b9e6b !important;
+  --highlight: rgba(196, 120, 90, 0.15) !important;
+}
+
+/* 基础配置 */
+.markdown-rendered,
+.markdown-source-view {
+  background-color: #faf6f1 !important;
+  color: #3d3832 !important;
+}
+
+/* 标题 - 衬线字体 + 暖色装饰 */
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 {
+  font-family: 'Noto Serif SC', 'Songti SC', serif !important;
+  color: #3d3832 !important;
+  font-weight: 600 !important;
+}
+
+.markdown-rendered h1 {
+  font-size: 2.2em !important;
+  border-bottom: 2px solid #c4785a !important;
+  padding-bottom: 0.3em !important;
+  margin-bottom: 1em !important;
+}
+
+.markdown-rendered h2 {
+  font-size: 1.6em !important;
+  color: #c4785a !important;
+  margin-top: 1.8em !important;
+}
+
+.markdown-rendered h3 {
+  font-size: 1.3em !important;
+  color: #6b635a !important;
+  border-left: 3px solid #8b9e6b !important;
+  padding-left: 0.8em !important;
+}
+
+/* 高亮标记 - 温暖的黄色 */
+.mark-highlight {
+  background-color: #fef3c7 !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  font-weight: 500 !important;
+}
+
+/* 引用块 - 温暖的书页风格 */
+.markdown-rendered blockquote {
+  border-left: 4px solid #c4785a !important;
+  padding: 16px 20px !important;
+  margin: 20px 0 !important;
+  background: linear-gradient(to right, #faf6f1, #f5efe9) !important;
+  font-style: italic !important;
+  color: #5a5248 !important;
+  border-radius: 0 8px 8px 0 !important;
+}
+
+.markdown-rendered blockquote p {
+  margin: 0 !important;
+  line-height: 1.8 !important;
+}
+
+/* 代码块 - 温暖的深色 */
+.markdown-rendered pre,
+.markdown-source-view pre {
+  background: #3d3832 !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+  margin: 16px 0 !important;
+  border: 1px solid #e8e0d8 !important;
+}
+
+.markdown-rendered code {
+  font-family: 'IBM Plex Mono', 'Fira Code', monospace !important;
+  background-color: #f5efe9 !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  font-size: 0.9em !important;
+  color: #c4785a !important;
+}
+
+.markdown-rendered pre code {
+  background: none !important;
+  padding: 0 !important;
+  color: #f5efe9 !important;
+}
+
+/* 表格 - 自然的纸张质感 */
+.markdown-rendered table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  margin: 24px 0 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 8px rgba(61, 56, 50, 0.08) !important;
+}
+
+.markdown-rendered table th {
+  background: linear-gradient(135deg, #8b9e6b 0%, #a5b07a 100%) !important;
+  color: #faf6f1 !important;
+  padding: 14px 18px !important;
+  text-align: left !important;
+  font-weight: 600 !important;
+}
+
+.markdown-rendered table td {
+  padding: 12px 18px !important;
+  border-bottom: 1px solid #e8e0d8 !important;
+  color: #3d3832 !important;
+}
+
+.markdown-rendered table tr:nth-child(even) {
+  background-color: #faf6f1 !important;
+}
+
+.markdown-rendered table tr:nth-child(odd) {
+  background-color: #f5efe9 !important;
+}
+
+.markdown-rendered table tr:hover {
+  background-color: #efe8de !important;
+}
+
+/* 列表 - 有机圆点 */
+.markdown-rendered ul > li::marker {
+  color: #c4785a !important;
+}
+
+.markdown-rendered ol > li::marker {
+  color: #c4785a !important;
+  font-weight: 600 !important;
+}
+
+/* Callout 样式 - 温暖自然 */
+.callout {
+  border-radius: 8px !important;
+  padding: 16px 20px !important;
+  margin: 20px 0 !important;
+  border-left: 4px solid !important;
+  background: #faf6f1 !important;
+}
+
+.callout-info {
+  background: #e8f4f8 !important;
+  border-color: #5a9e8b !important;
+}
+
+.callout-tip {
+  background: #eaf0e5 !important;
+  border-color: #8b9e6b !important;
+}
+
+.callout-warning {
+  background: #faf3e5 !important;
+  border-color: #c49a5a !important;
+}
+
+.callout-danger {
+  background: #f8e8e5 !important;
+  border-color: #c45a5a !important;
+}
+
+/* 标签样式 - 柔和胶囊 */
+.tag {
+  display: inline-block !important;
+  padding: 4px 14px !important;
+  background: linear-gradient(135deg, #8b9e6b 0%, #a5b07a 100%) !important;
+  color: white !important;
+  border-radius: 20px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  margin: 2px !important;
+}
+
+/* 链接 - 温暖的强调 */
+.markdown-rendered a {
+  color: #c4785a !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid transparent !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.markdown-rendered a:hover {
+  border-bottom-color: #c4785a !important;
+}
+
+/* hr 分隔线 - 自然的过渡 */
+.markdown-rendered hr {
+  border: none !important;
+  height: 2px !important;
+  background: linear-gradient(to right, transparent, #e8e0d8, transparent) !important;
+  margin: 32px 0 !important;
+}
+
+/* 步骤指示器 - 温暖的圆形 */
+.step-indicator {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 28px !important;
+  height: 28px !important;
+  background: linear-gradient(135deg, #c4785a 0%, #d4906a 100%) !important;
+  color: white !important;
+  border-radius: 50% !important;
+  margin-right: 10px !important;
+  font-weight: bold !important;
+  font-size: 14px !important;
+}
+
+/* 难度星级 */
+.difficulty-easy { color: #22c55e !important; }
+.difficulty-medium { color: #f59e0b !important; }
+.difficulty-hard { color: #ef4444 !important; }

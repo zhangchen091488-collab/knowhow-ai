@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "效率工具/zoxide.md",
-                "mode": "source",
+                "file": "Labs/字体展示.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "zoxide"
+              "title": "字体展示"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "效率工具/zoxide.md",
+                "file": "Labs/字体展示.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "zoxide 的反向链接列表"
+              "title": "字体展示 的反向链接列表"
             }
           },
           {
@@ -186,47 +186,51 @@
   },
   "active": "de370abb6dd26594",
   "lastOpenFiles": [
-    "效率工具/tunnelto.md",
-    "效率工具/carbonyl.md",
-    "效率工具/效率工具.md",
-    "Cursor/02-进阶/The-Agency-AI专家团队.md",
-    "OpenClaw/OpenClaw.md",
     "index.md",
-    "Cursor/01-基础/Cursor入门.md",
-    "效率工具/zoxide.md",
-    "OpenClaw/OpenClaw 多 Agent 架构.md",
-    "OpenClaw/OpenClaw 微信插件使用指南.md",
-    "OpenClaw/OpenClaw 飞书插件使用指南.md",
-    "OpenClaw/OpenClaw 架构概念.md",
-    "OpenClaw/OpenClaw CLI 参考.md",
-    "OpenClaw/OpenClaw 配置指南.md",
-    "OpenClaw/OpenClaw 安装方法.md",
-    "OpenClaw/OpenClaw 快速入门.md",
-    "Cursor/00-知识库导航.md",
-    "Cursor/Cursor.md",
-    "OpenClaw/_index.md",
-    "OpenClaw/08-OpenClaw 多 Agent 架构.md",
-    "Assets/Pose.vroidpose",
-    "Assets/XiaoYo.vrm",
-    "Cursor/01-基础/01-Cursor入门.md",
-    "效率工具/_index.md",
-    "效率工具/03-carbonyl.md",
-    "效率工具/02-zoxide.md",
-    "效率工具/01-tunnelto.md",
-    "效率工具",
-    "OpenClaw/07-OpenClaw 微信插件使用指南.md",
-    "OpenClaw",
+    "Labs/字体展示.md",
+    "Labs/公众号文章模板.md",
+    "Labs/Excalidraw文档绘图工具.md",
+    "Labs/数字花园搭建指南.md",
+    "Labs/_index.md",
+    "Labs/文档美化演示.md",
+    "Labs/数字花园搭建指南-Quartz-Vercel-阿里云域名.md",
+    "Labs/Excalidraw图表在文档中的应用.md",
+    "Labs/Excalidraw文档绘图工具Showcase.md",
+    "Labs",
+    "VibeCoding/05-Assets/theme-warm_orange.excalidraw",
+    "VibeCoding/05-Assets/theme-vercel.excalidraw",
+    "VibeCoding/05-Assets/theme-tech_blue.excalidraw",
+    "VibeCoding/05-Assets/theme-sunset.excalidraw",
+    "VibeCoding/05-Assets/theme-spotify.excalidraw",
+    "VibeCoding/05-Assets/theme-radiant.excalidraw",
+    "VibeCoding/05-Assets/theme-ocean.excalidraw",
+    "VibeCoding/05-Assets/theme-notion.excalidraw",
+    "VibeCoding/05-Assets/theme-nord.excalidraw",
+    "VibeCoding/公众号文章模板.md",
+    "VibeCoding/Excalidraw文档绘图工具Showcase.md",
+    "VibeCoding/Excalidraw图表在文档中的应用.md",
+    "VibeCoding/数字花园搭建指南-Quartz-Vercel-阿里云域名.md",
+    "VibeCoding/The-Agency-AI专家团队.md",
+    "VibeCoding/Subagent协作模式.md",
+    "VibeCoding/Skills深度探索.md",
+    "VibeCoding/如何写好Skill-完整指南.md",
+    "VibeCoding/CLI-Anything-让软件具有Agent原生能力.md",
+    "VibeCoding/渐进式揭示-Skill设计的艺术与科学.md",
+    "VibeCoding/Cursor入门.md",
+    "VibeCoding/_index.md",
+    "VibeCoding/05-Assets/skills5.jpg",
+    "VibeCoding/05-Assets/skills4.jpg",
+    "VibeCoding/05-Assets/skills3.jpg",
+    "VibeCoding/05-Assets/skills2.jpg",
+    "VibeCoding/05-Assets/skills1.jpg",
+    "VibeCoding/04-思考/公众号文章模板.md",
+    "VibeCoding/04-思考/_index.md",
+    "VibeCoding/03-实战/数字花园搭建指南-Quartz-Vercel-阿里云域名.md",
+    "VibeCoding/03-实战/_index.md",
     "Assets/welcome.png",
     "Assets/test-export.png",
     "Assets/skills5.jpg",
     "Assets/skills4.jpg",
-    "Assets/skills3.jpg",
-    "Assets/skills2.jpg",
-    "Assets/skills1.jpg",
-    "Assets/showcase-workflow.png",
-    "Assets/showcase-usecases.png",
-    "Assets/showcase-themes.png",
-    "Assets/custom-styles.css",
-    "Assets"
+    "Assets/skills3.jpg"
   ]
 }
