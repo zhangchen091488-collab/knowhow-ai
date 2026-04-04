@@ -1,5 +1,5 @@
 ---
-title: "07-CLI-Anything-让软件具有Agent原生能力"
+title: 07-CLI-Anything-让软件具有Agent原生能力
 ---
 
 # CLI-Anything：让任何软件具有 Agent 原生能力

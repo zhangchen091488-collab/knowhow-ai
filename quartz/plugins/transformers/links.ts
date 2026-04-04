@@ -120,7 +120,11 @@ export const CrawlLinks: QuartzTransformerPlugin<Partial<Options>> = (userOpts) 
 
                   // need to decodeURIComponent here as WHATWG URL percent-encodes everything
                   const full = decodeURIComponent(stripSlashes(destCanonical, true)) as FullSlug
-                  const simple = simplifySlug(full)
+                  // strip .html extension for consistent slug matching in graph
+                  const fullStripped = full.endsWith(".html")
+                    ? (full.slice(0, -".html".length) as FullSlug)
+                    : full
+                  const simple = simplifySlug(fullStripped)
                   outgoing.add(simple)
                   node.properties["data-slug"] = full
                 }

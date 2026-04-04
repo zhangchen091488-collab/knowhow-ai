@@ -17,7 +17,7 @@ title: VibeCoding
 | [03-如何写好Skill-完整指南](03-如何写好Skill-完整指南) | 从零构建专业 Skill 的完整方法论 | ⭐⭐⭐ |
 | [04-渐进式揭示-Skill设计的艺术与科学](04-渐进式揭示-Skill设计的艺术与科学) | 渐进式揭示设计哲学与实战技巧 | ⭐⭐⭐ |
 | [05-Subagent协作模式](05-Subagent协作模式) | 多 Agent 协作解决复杂开发任务 | ⭐⭐⭐ |
-| [06-The-Agency-AI专家团队](06-The-Agency-AI专家团队) | 147 个 AI Agent 开源宝库（53K Stars） | ⭐⭐ |
+| [06-The-Agency-AI专家团队](06-The-Agency-AI专家团队.md) | 147 个 AI Agent 开源宝库（53K Stars） | ⭐⭐ |
 | [07-CLI-Anything-让软件具有Agent原生能力](07-CLI-Anything-让软件具有Agent原生能力) | 将任意软件转化为 AI 可控 CLI | ⭐⭐ |
 | [08-impeccable-风格化前端设计技能](08-impeccable-风格化前端设计技能) | 17 个命令驱动的 AI 设计技能系统 | ⭐⭐ |
 

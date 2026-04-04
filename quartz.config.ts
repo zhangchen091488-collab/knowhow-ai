@@ -1,5 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import * as Component from "./quartz/components"
 
 /**
  * Quartz 4 Configuration
@@ -10,7 +11,6 @@ const config: QuartzConfig = {
   configuration: {
     pageTitle: "KnowHowAI",
     pageTitleSuffix: " - Cursor AI 编程实战指南",
-    defaultUrlExtension: "html",
     enableSPA: false,
     enablePopovers: true,
     analytics: {
@@ -18,7 +18,18 @@ const config: QuartzConfig = {
     },
     locale: "zh-CN",
     baseUrl: "knowhow-ai.vercel.app",
-    ignorePatterns: ["private", "templates", ".obsidian", ".git", ".claude", ".cursor", ".kiro", ".qoder", ".trae", ".agents"],
+    ignorePatterns: [
+      "private",
+      "templates",
+      ".obsidian",
+      ".git",
+      ".claude",
+      ".cursor",
+      ".kiro",
+      ".qoder",
+      ".trae",
+      ".agents",
+    ],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
@@ -86,7 +97,9 @@ const config: QuartzConfig = {
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
-      Plugin.FolderPage(),
+      Plugin.FolderPage({
+        right: [Component.Graph(), Component.DesktopOnly(Component.TableOfContents())],
+      }),
       Plugin.TagPage(),
       Plugin.ContentIndex({
         enableSiteMap: true,

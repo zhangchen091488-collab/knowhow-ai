@@ -69,9 +69,24 @@ type TweenNode = {
 }
 
 async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
-  const slug = simplifySlug(fullSlug)
+  let slug = simplifySlug(fullSlug)
   const visited = getVisited()
   removeAllChildren(graph)
+
+  // Build data map with simplified keys
+  const data: Map<SimpleSlug, ContentDetails> = new Map(
+    Object.entries<ContentDetails>(await fetchData).map(([k, v]) => [
+      simplifySlug(k as FullSlug),
+      v,
+    ]),
+  )
+
+  // For folder index pages (e.g., OpenClaw/), check if slug/index exists
+  // contentIndex stores folder indexes as "OpenClaw/index" but URL is "OpenClaw/"
+  const slugOrIndex = (slug.endsWith("/") ? slug + "index" : slug + "/index") as SimpleSlug
+  if (!data.has(slug) && data.has(slugOrIndex)) {
+    slug = slugOrIndex
+  }
 
   let {
     drag: enableDrag,
@@ -89,12 +104,6 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     enableRadial,
   } = JSON.parse(graph.dataset["cfg"]!) as D3Config
 
-  const data: Map<SimpleSlug, ContentDetails> = new Map(
-    Object.entries<ContentDetails>(await fetchData).map(([k, v]) => [
-      simplifySlug(k as FullSlug),
-      v,
-    ]),
-  )
   const links: SimpleLinkData[] = []
   const tags: SimpleSlug[] = []
   const validLinks = new Set(data.keys())
@@ -104,8 +113,17 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const outgoing = details.links ?? []
 
     for (const dest of outgoing) {
-      if (validLinks.has(dest)) {
-        links.push({ source: source, target: dest })
+      // Try exact match first, then try matching with "/" prefix for relative paths
+      let resolvedDest = dest
+      if (!validLinks.has(dest)) {
+        // Try to find a key that ends with "/" + dest (relative path resolution)
+        const found = [...validLinks].find((key) => key.endsWith("/" + dest))
+        if (found) {
+          resolvedDest = found
+        }
+      }
+      if (validLinks.has(resolvedDest)) {
+        links.push({ source: source, target: resolvedDest })
       }
     }
 
