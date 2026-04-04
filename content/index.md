@@ -31,8 +31,8 @@ cssclasses:
 > 系统化沉淀 AI 应用开发经验，从入门到精通
 
 <div class="hero-buttons">
-  <a href="#cursor" class="button primary">💠 探索 Vibe Coding</a>
-  <a href="#openclaw" class="button secondary">🦞 了解 OpenClaw</a>
+  <a href="VibeCoding/" class="button primary">💠 探索 Vibe Coding</a>
+  <a href="OpenClaw/" class="button secondary">🦞 了解 OpenClaw</a>
 </div>
 
 ---
