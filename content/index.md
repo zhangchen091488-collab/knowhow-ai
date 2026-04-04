@@ -90,7 +90,7 @@ Cursor 核心功能和使用技巧的系统化总结。
   <div class="topic-card">
     <h4>📕 思考篇</h4>
     <ul>
-      <li><a href="Labs/公众号文章模板.html">学习方法论</a></li>
+      <li><a href="Playground/公众号文章模板">学习方法论</a></li>
     </ul>
   </div>
 </div>

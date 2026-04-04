@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Labs/字体展示.md",
-                "mode": "preview",
+                "file": "index.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "字体展示"
+              "title": "index"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Labs/字体展示.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "字体展示 的反向链接列表"
+              "title": "index 的反向链接列表"
             }
           },
           {
@@ -186,12 +186,19 @@
   },
   "active": "de370abb6dd26594",
   "lastOpenFiles": [
-    "index.md",
+    "Playground/文档美化演示.md",
+    "Playground/数字花园搭建指南.md",
+    "Playground/字体展示.md",
+    "Playground/公众号文章模板.md",
+    "Playground/_index.md",
+    "Playground/Excalidraw文档绘图工具.md",
+    "Playground",
     "Labs/字体展示.md",
+    "Labs/_index.md",
+    "index.md",
     "Labs/公众号文章模板.md",
     "Labs/Excalidraw文档绘图工具.md",
     "Labs/数字花园搭建指南.md",
-    "Labs/_index.md",
     "Labs/文档美化演示.md",
     "Labs/数字花园搭建指南-Quartz-Vercel-阿里云域名.md",
     "Labs/Excalidraw图表在文档中的应用.md",
@@ -205,7 +212,6 @@
     "VibeCoding/05-Assets/theme-radiant.excalidraw",
     "VibeCoding/05-Assets/theme-ocean.excalidraw",
     "VibeCoding/05-Assets/theme-notion.excalidraw",
-    "VibeCoding/05-Assets/theme-nord.excalidraw",
     "VibeCoding/公众号文章模板.md",
     "VibeCoding/Excalidraw文档绘图工具Showcase.md",
     "VibeCoding/Excalidraw图表在文档中的应用.md",
@@ -216,17 +222,11 @@
     "VibeCoding/如何写好Skill-完整指南.md",
     "VibeCoding/CLI-Anything-让软件具有Agent原生能力.md",
     "VibeCoding/渐进式揭示-Skill设计的艺术与科学.md",
-    "VibeCoding/Cursor入门.md",
-    "VibeCoding/_index.md",
     "VibeCoding/05-Assets/skills5.jpg",
     "VibeCoding/05-Assets/skills4.jpg",
     "VibeCoding/05-Assets/skills3.jpg",
     "VibeCoding/05-Assets/skills2.jpg",
     "VibeCoding/05-Assets/skills1.jpg",
-    "VibeCoding/04-思考/公众号文章模板.md",
-    "VibeCoding/04-思考/_index.md",
-    "VibeCoding/03-实战/数字花园搭建指南-Quartz-Vercel-阿里云域名.md",
-    "VibeCoding/03-实战/_index.md",
     "Assets/welcome.png",
     "Assets/test-export.png",
     "Assets/skills5.jpg",

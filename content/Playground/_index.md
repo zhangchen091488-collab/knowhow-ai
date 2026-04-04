@@ -1,8 +1,8 @@
 ---
-title: Labs
+title: Playground
 ---
 
-# 🔬 Labs
+# 🎮 Playground
 
 > 实验性项目与工具展示 — 探索创意与技术的边界
 
