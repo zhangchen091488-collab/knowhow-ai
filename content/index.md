@@ -8,7 +8,7 @@
 })();
 </script>
 
-![欢迎 banner](./Assets/welcome.png)
+![欢迎 banner](./Assets/welcome_warn.png)
 <div style="font-family: 'Long Cang', cursive; font-size: 1.4em; line-height: 1.9; color: #5a5248;">
 
 Hello～，欢迎来到我的数字花园🌱，我是Chen。

@@ -186,6 +186,9 @@
   },
   "active": "de370abb6dd26594",
   "lastOpenFiles": [
+    "Assets/welcome_warn.png",
+    "Assets/welcom_warn.png",
+    "Assets/生成指定配色的图片.png",
     "Playground/05-✍️字体展示.md",
     "index.md",
     "Playground/02-🌱数字花园搭建指南.md",
@@ -212,7 +215,6 @@
     "OpenClaw/03-OpenClaw-配置指南.md",
     "OpenClaw/02-OpenClaw-安装方法.md",
     "OpenClaw/01-OpenClaw-快速入门.md",
-    "Playground/01-品牌设计展示.md",
     "Playground/brand-preview.html",
     "Playground",
     "Labs",
@@ -229,8 +231,6 @@
     "VibeCoding/05-Assets/skills1.jpg",
     "Assets/welcome.png",
     "Assets/test-export.png",
-    "Assets/skills5.jpg",
-    "Assets/skills4.jpg",
-    "Assets/skills3.jpg"
+    "Assets/skills5.jpg"
   ]
 }
