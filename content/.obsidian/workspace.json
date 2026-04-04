@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VibeCoding/07-CLI-Anything-让软件具有Agent原生能力.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "07-CLI-Anything-让软件具有Agent原生能力"
+              "title": "index"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VibeCoding/07-CLI-Anything-让软件具有Agent原生能力.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "07-CLI-Anything-让软件具有Agent原生能力 的反向链接列表"
+              "title": "index 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VibeCoding/07-CLI-Anything-让软件具有Agent原生能力.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "07-CLI-Anything-让软件具有Agent原生能力 的出链列表"
+              "title": "index 的出链列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "VibeCoding/07-CLI-Anything-让软件具有Agent原生能力.md",
+                "file": "index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "07-CLI-Anything-让软件具有Agent原生能力 的大纲"
+              "title": "index 的大纲"
             }
           }
         ]
@@ -186,8 +186,13 @@
   },
   "active": "de370abb6dd26594",
   "lastOpenFiles": [
-    "VibeCoding/08-impeccable-风格化前端设计技能.md",
+    "Playground/05-✍️字体展示.md",
+    "index.md",
+    "Playground/02-🌱数字花园搭建指南.md",
+    "Playground/06-💎品牌设计展示.md",
+    "效率工具/zoxide.md",
     "VibeCoding/07-CLI-Anything-让软件具有Agent原生能力.md",
+    "VibeCoding/08-impeccable-风格化前端设计技能.md",
     "VibeCoding/06-The-Agency-AI专家团队.md",
     "VibeCoding/_index.md",
     "VibeCoding/01-Cursor入门.md",
@@ -197,11 +202,8 @@
     "VibeCoding/02-Skills深度探索.md",
     "OpenClaw/_index.md",
     "Playground/_index.md",
-    "Playground/02-🌱数字花园搭建指南.md",
     "references/EXPERT.md",
     "references",
-    "Playground/06-💎品牌设计展示.md",
-    "index.md",
     "OpenClaw/08-OpenClaw-多Agent架构.md",
     "OpenClaw/07-OpenClaw-微信插件使用指南.md",
     "OpenClaw/06-OpenClaw-飞书插件使用指南.md",
@@ -210,9 +212,7 @@
     "OpenClaw/03-OpenClaw-配置指南.md",
     "OpenClaw/02-OpenClaw-安装方法.md",
     "OpenClaw/01-OpenClaw-快速入门.md",
-    "Playground/05-✍️字体展示.md",
     "Playground/01-品牌设计展示.md",
-    "Playground/06-品牌设计展示.md",
     "Playground/brand-preview.html",
     "Playground",
     "Labs",

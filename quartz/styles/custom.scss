@@ -5,6 +5,126 @@
    灵感：精装书籍，自然舒适、温暖阅读体验
    ============================================ */
 
+/* ============================================
+   首页 Hero 区域 - 暖色系玻璃拟态风格
+   ============================================ */
+
+.homepage-hero {
+  position: relative !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 3rem 2rem !important;
+  margin: 2rem 0 !important;
+}
+
+.hero-glass-warm {
+  background: rgba(255, 255, 255, 0.75) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(196, 120, 90, 0.25) !important;
+  border-radius: 20px !important;
+  padding: 2.5rem 4rem !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 2.5rem !important;
+  box-shadow: 0 8px 32px rgba(90, 61, 43, 0.12) !important;
+  position: relative !important;
+  z-index: 1 !important;
+  transform: translateZ(0) !important;
+}
+
+.hero-emblem-warm {
+  font-size: 3.5rem !important;
+  color: #c4785a !important;
+  text-shadow: 0 4px 20px rgba(196, 120, 90, 0.35) !important;
+  animation: emblem-pulse-warm 3s ease-in-out infinite !important;
+}
+
+@keyframes emblem-pulse-warm {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.08); opacity: 0.9; }
+}
+
+.hero-text-warm {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.2rem !important;
+}
+
+.hero-main-warm {
+  font-family: 'Long Cang', cursive !important;
+  font-size: 3.5rem !important;
+  font-weight: normal !important;
+  color: #5a3d2b !important;
+  line-height: 1 !important;
+  letter-spacing: 0.05em !important;
+}
+
+.hero-sub-warm {
+  font-family: 'IBM Plex Serif', serif !important;
+  font-size: 1rem !important;
+  color: #c4785a !important;
+  letter-spacing: 0.25em !important;
+  text-transform: uppercase !important;
+}
+
+/* 暖色背景光晕 */
+.hero-orb-warm-1 {
+  position: absolute !important;
+  width: 180px !important;
+  height: 180px !important;
+  border-radius: 50% !important;
+  background: radial-gradient(circle, rgba(196, 120, 90, 0.25), rgba(212, 144, 106, 0.15), transparent) !important;
+  top: 0 !important;
+  left: 15% !important;
+  z-index: 0 !important;
+  filter: blur(35px) !important;
+  animation: orb-float-warm 6s ease-in-out infinite !important;
+}
+
+.hero-orb-warm-2 {
+  position: absolute !important;
+  width: 140px !important;
+  height: 140px !important;
+  border-radius: 50% !important;
+  background: radial-gradient(circle, rgba(232, 168, 120, 0.25), rgba(196, 120, 90, 0.15), transparent) !important;
+  bottom: 0 !important;
+  right: 18% !important;
+  z-index: 0 !important;
+  filter: blur(28px) !important;
+  animation: orb-float-warm 8s ease-in-out infinite reverse !important;
+}
+
+@keyframes orb-float-warm {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-15px) scale(1.05); }
+}
+
+/* 标语区域 */
+.hero-tagline {
+  text-align: center !important;
+  margin: 1.5rem 0 1rem !important;
+  font-family: 'Noto Serif SC', serif !important;
+  font-size: 1.1rem !important;
+  color: #667eea !important;
+  letter-spacing: 0.15em !important;
+}
+
+.hero-sep {
+  margin: 0 0.8rem !important;
+  color: #764ba2 !important;
+}
+
+.hero-desc {
+  text-align: center !important;
+  margin-bottom: 2rem !important;
+  font-family: 'Noto Serif SC', serif !important;
+  font-size: 1rem !important;
+  color: #6b635a !important;
+  letter-spacing: 0.1em !important;
+}
+
 /* 手写体文字类 */
 .handwritten-zcool {
   font-family: 'ZCOOL XiaoWei', serif !important;
@@ -568,6 +688,426 @@ body {
   display: inline-block !important;
 }
 
+/* 方案 E：水墨风格 */
+.brand-ink {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 1.5rem !important;
+  position: relative !important;
+}
+
+.ink-container {
+  display: flex !important;
+  align-items: baseline !important;
+  gap: 0.5rem !important;
+  position: relative !important;
+}
+
+.ink-character {
+  font-family: 'Ma Shan Zheng', 'ZCOOL XiaoWei', serif !important;
+  font-size: 6rem !important;
+  color: #1a1a1a !important;
+  line-height: 1 !important;
+  position: relative !important;
+}
+
+.ink-character:first-child {
+  opacity: 0.85 !important;
+  text-shadow: 2px 2px 0 rgba(200,180,160,0.3) !important;
+}
+
+.ink-character:nth-child(2) {
+  opacity: 1 !important;
+  color: #3d3832 !important;
+  text-shadow: 3px 3px 0 rgba(180,100,60,0.2) !important;
+}
+
+.ink-ai {
+  font-family: 'IBM Plex Sans', sans-serif !important;
+  font-size: 2.5rem !important;
+  font-weight: 300 !important;
+  color: #c4785a !important;
+  letter-spacing: 0.05em !important;
+  margin-left: 0.5rem !important;
+}
+
+.ink-divider {
+  width: 200px !important;
+  height: 2px !important;
+  background: linear-gradient(to right, transparent, #5a3d2b, transparent) !important;
+  position: relative !important;
+}
+
+.ink-divider::before {
+  content: '◆' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  background: #faf0e4 !important;
+  padding: 0 0.5rem !important;
+  color: #c4785a !important;
+  font-size: 0.8rem !important;
+}
+
+.ink-en {
+  font-family: 'IBM Plex Serif', serif !important;
+  font-size: 1rem !important;
+  color: #8b7355 !important;
+  letter-spacing: 0.35em !important;
+  text-transform: uppercase !important;
+}
+
+.ink-brushstroke {
+  width: 120px !important;
+  height: 8px !important;
+  background: linear-gradient(90deg, transparent, #5a3d2b 20%, #5a3d2b 80%, transparent) !important;
+  border-radius: 4px !important;
+  opacity: 0.4 !important;
+  transform: skewX(-5deg) !important;
+}
+
+/* 方案 F：像素复古风 */
+.brand-pixel {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 1.5rem !important;
+  background: #1a1a2e !important;
+  padding: 2.5rem !important;
+  border-radius: 8px !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.pixel-grid {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 1.4rem !important;
+  color: #00ff88 !important;
+  text-shadow: 0 0 10px rgba(0,255,136,0.5) !important;
+  line-height: 1.3 !important;
+  letter-spacing: 0.1em !important;
+  white-space: pre !important;
+}
+
+.pixel-text {
+  text-align: center !important;
+}
+
+.pixel-main {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  color: #00ff88 !important;
+  text-shadow: 0 0 20px rgba(0,255,136,0.6) !important;
+  letter-spacing: 0.15em !important;
+}
+
+.pixel-sub {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 0.9rem !important;
+  color: #ffd700 !important;
+  letter-spacing: 0.2em !important;
+  margin-top: 0.5rem !important;
+}
+
+.pixel-tag {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 0.8rem !important;
+  color: #ff6b9d !important;
+  letter-spacing: 0.15em !important;
+}
+
+/* 方案 G：流动极光 */
+.brand-aurora {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 400px !important;
+  height: 200px !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.aurora-bg {
+  position: absolute !important;
+  inset: 0 !important;
+  overflow: hidden !important;
+}
+
+.aurora-wave {
+  position: absolute !important;
+  width: 200% !important;
+  height: 100% !important;
+  opacity: 0.7 !important;
+}
+
+.aurora-wave-1 {
+  background: linear-gradient(90deg, #667eea, #764ba2, #f093fb) !important;
+  animation: aurora-flow 8s ease-in-out infinite !important;
+  top: 0 !important;
+}
+
+.aurora-wave-2 {
+  background: linear-gradient(90deg, #4facfe, #00f2fe, #43e97b) !important;
+  animation: aurora-flow 10s ease-in-out infinite reverse !important;
+  top: 30% !important;
+  opacity: 0.5 !important;
+}
+
+.aurora-wave-3 {
+  background: linear-gradient(90deg, #fa709a, #fee140, #fa709a) !important;
+  animation: aurora-flow 12s ease-in-out infinite !important;
+  top: 60% !important;
+  opacity: 0.3 !important;
+}
+
+@keyframes aurora-flow {
+  0%, 100% { transform: translateX(-25%); }
+  50% { transform: translateX(0%); }
+}
+
+.aurora-text {
+  position: relative !important;
+  z-index: 1 !important;
+  display: flex !important;
+  align-items: baseline !important;
+  gap: 0.3rem !important;
+}
+
+.aurora-main {
+  font-family: 'Noto Serif SC', serif !important;
+  font-size: 3.5rem !important;
+  font-weight: 800 !important;
+  color: white !important;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3) !important;
+  letter-spacing: 0.1em !important;
+}
+
+.aurora-ai {
+  font-family: 'IBM Plex Sans', sans-serif !important;
+  font-size: 2rem !important;
+  font-weight: 300 !important;
+  color: rgba(255,255,255,0.95) !important;
+  text-shadow: 0 2px 15px rgba(0,0,0,0.3) !important;
+}
+
+.aurora-en {
+  position: relative !important;
+  z-index: 1 !important;
+  font-family: 'IBM Plex Serif', serif !important;
+  font-size: 0.9rem !important;
+  color: rgba(255,255,255,0.9) !important;
+  letter-spacing: 0.25em !important;
+  text-transform: uppercase !important;
+  margin-top: 0.5rem !important;
+  text-shadow: 0 1px 10px rgba(0,0,0,0.2) !important;
+}
+
+/* 方案 H：剪纸/窗花风格 */
+.brand-paper {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  padding: 2rem !important;
+  background: #fef9f3 !important;
+  border-radius: 4px !important;
+  position: relative !important;
+}
+
+.paper-frame {
+  border: 3px solid #c4785a !important;
+  padding: 2rem 2.5rem !important;
+  position: relative !important;
+  background: linear-gradient(135deg, #fff9f0 0%, #fdf0e6 100%) !important;
+}
+
+.paper-frame::before,
+.paper-frame::after {
+  content: '' !important;
+  position: absolute !important;
+  width: 20px !important;
+  height: 20px !important;
+  border: 2px solid #d4906a !important;
+}
+
+.paper-frame::before {
+  top: -6px !important;
+  left: -6px !important;
+  border-right: none !important;
+  border-bottom: none !important;
+}
+
+.paper-frame::after {
+  bottom: -6px !important;
+  right: -6px !important;
+  border-left: none !important;
+  border-top: none !important;
+}
+
+.paper-cut {
+  text-align: center !important;
+}
+
+.cut-symmetric {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 1.5rem !important;
+}
+
+.cut-left, .cut-right {
+  font-family: 'Noto Serif SC', serif !important;
+  font-size: 4rem !important;
+  font-weight: 700 !important;
+  color: #5a3d2b !important;
+  letter-spacing: 0.05em !important;
+}
+
+.cut-center {
+  font-size: 2rem !important;
+  color: #c4785a !important;
+}
+
+.paper-en {
+  font-family: 'IBM Plex Serif', serif !important;
+  font-size: 0.85rem !important;
+  color: #8b7355 !important;
+  letter-spacing: 0.3em !important;
+  text-transform: uppercase !important;
+  margin-top: 1.5rem !important;
+  text-align: center !important;
+}
+
+/* 方案 I：玻璃拟态 */
+.brand-glass {
+  position: relative !important;
+  width: 280px !important;
+  height: 160px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 16px !important;
+  padding: 2rem 2.5rem !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 1.5rem !important;
+  box-shadow: 0 8px 32px rgba(196, 120, 90, 0.2) !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.glass-icon {
+  font-size: 3rem !important;
+  color: #c4785a !important;
+  text-shadow: 0 2px 10px rgba(196, 120, 90, 0.4) !important;
+}
+
+.glass-text {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.3rem !important;
+}
+
+.glass-main {
+  font-family: 'Noto Serif SC', serif !important;
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: #3d3832 !important;
+  letter-spacing: 0.1em !important;
+}
+
+.glass-sub {
+  font-family: 'IBM Plex Serif', serif !important;
+  font-size: 0.8rem !important;
+  color: #6b635a !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+}
+
+.glass-orb {
+  position: absolute !important;
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 50% !important;
+  background: radial-gradient(circle at 30% 30%, rgba(255,200,150,0.8), rgba(196,120,90,0.4), rgba(100,80,60,0.2)) !important;
+  top: -30px !important;
+  right: -30px !important;
+  z-index: 0 !important;
+  filter: blur(8px) !important;
+}
+
+/* 方案 J：书法 + 现代几何 */
+.brand-hybrid {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 1.2rem !important;
+}
+
+.hybrid-layout {
+  display: flex !important;
+  align-items: center !important;
+  gap: 1.5rem !important;
+}
+
+.hybrid-calligraphy {
+  font-family: 'Ma Shan Zheng', 'ZCOOL XiaoWei', serif !important;
+  font-size: 5.5rem !important;
+  color: #5a3d2b !important;
+  line-height: 1 !important;
+  text-shadow: 2px 2px 0 rgba(196,120,90,0.15) !important;
+}
+
+.hybrid-geometric {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 0.4rem !important;
+}
+
+.geo-line {
+  width: 80px !important;
+  height: 3px !important;
+  background: linear-gradient(to right, #c4785a, #d4906a) !important;
+  border-radius: 2px !important;
+}
+
+.geo-text {
+  font-family: 'IBM Plex Sans', sans-serif !important;
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  color: #3d3832 !important;
+  letter-spacing: 0.05em !important;
+}
+
+.hybrid-en {
+  font-family: 'IBM Plex Serif', serif !important;
+  font-size: 0.9rem !important;
+  color: #8b7355 !important;
+  letter-spacing: 0.3em !important;
+  text-transform: uppercase !important;
+}
+
+.hybrid-tag {
+  font-family: 'Noto Serif SC', serif !important;
+  font-size: 0.9rem !important;
+  color: #c4785a !important;
+  letter-spacing: 0.2em !important;
+  margin-top: 0.5rem !important;
+}
+
 /* 品牌故事 */
 .brand-story {
   background: linear-gradient(145deg, #f8f2ec 0%, #efe4d8 100%) !important;
@@ -652,4 +1192,493 @@ body {
   font-size: 0.75rem !important;
   color: #8b7355 !important;
   font-family: 'IBM Plex Mono', monospace !important;
+}
+
+/* ============================================
+   品牌设计展示 - 方案二：极简黑白灰
+   ============================================ */
+
+/* 极简色彩系统色板 */
+.color-scheme-bw .color-swatch-preview {
+  border: 2px solid #e0e0e0 !important;
+}
+
+.color-scheme-bw .color-swatch-name {
+  color: #1a1a1a !important;
+}
+
+.color-scheme-bw .color-swatch-hex {
+  color: #4a4a4a !important;
+}
+
+/* 极简风格品牌卡片 */
+.brand-card-scheme-bw {
+  border: 1px solid #e0e0e0 !important;
+  background: linear-gradient(145deg, #ffffff 0%, #f8f8f8 100%) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+}
+
+.brand-card-scheme-bw .brand-card-header {
+  border-bottom: 2px solid #1a1a1a !important;
+}
+
+.brand-card-scheme-bw .brand-card-title {
+  color: #1a1a1a !important;
+}
+
+.brand-card-scheme-bw .brand-card-tag {
+  background: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 100%) !important;
+}
+
+.brand-card-scheme-bw .brand-card-content {
+  background: #ffffff !important;
+  border: 1px solid #e0e0e0 !important;
+}
+
+.brand-card-scheme-bw .brand-card-footer p {
+  color: #4a4a4a !important;
+}
+
+/* 极简印章 */
+.seal-frame-bw {
+  border: 4px solid #1a1a1a !important;
+  background: #ffffff !important;
+}
+
+.seal-frame-bw::before {
+  border: 2px solid #4a4a4a !important;
+}
+
+.seal-frame-bw::after {
+  background: #ffffff !important;
+  color: #1a1a1a !important;
+}
+
+.seal-top-bw {
+  color: #1a1a1a !important;
+  text-shadow: none !important;
+}
+
+.seal-divider-bw {
+  background: linear-gradient(to right, transparent, #1a1a1a, transparent) !important;
+}
+
+.seal-bottom-bw {
+  color: #4a4a4a !important;
+}
+
+/* 极简字标 */
+.wordmark-bw .wordmark-main {
+  color: #1a1a1a !important;
+}
+
+.wordmark-bw .wordmark-main::before,
+.wordmark-bw .wordmark-main::after {
+  color: #4a4a4a !important;
+}
+
+.wordmark-bw .wordmark-line {
+  background: linear-gradient(to right, #1a1a1a, #4a4a4a, #1a1a1a) !important;
+}
+
+.wordmark-bw .wordmark-sub {
+  color: #4a4a4a !important;
+}
+
+/* ============================================
+   品牌设计展示 - 方案三：粉紫渐变
+   ============================================ */
+
+/* 粉紫色彩系统色板 */
+.color-scheme-purple .color-swatch-preview {
+  border: 2px solid rgba(102, 126, 234, 0.2) !important;
+}
+
+.color-scheme-purple .color-swatch-name {
+  color: #2d1b3d !important;
+}
+
+.color-scheme-purple .color-swatch-hex {
+  color: #764ba2 !important;
+}
+
+/* 粉紫风格品牌卡片 */
+.brand-card-scheme-purple {
+  border: 1px solid rgba(102, 126, 234, 0.2) !important;
+  background: linear-gradient(145deg, #fef9ff 0%, #f5e6ff 100%) !important;
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.12) !important;
+}
+
+.brand-card-scheme-purple .brand-card-header {
+  border-bottom: 2px solid rgba(102, 126, 234, 0.3) !important;
+}
+
+.brand-card-scheme-purple .brand-card-title {
+  color: #2d1b3d !important;
+}
+
+.brand-card-scheme-purple .brand-card-tag {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+.brand-card-scheme-purple .brand-card-content {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f0ff 100%) !important;
+  border: 1px solid rgba(102, 126, 234, 0.15) !important;
+}
+
+.brand-card-scheme-purple .brand-card-footer p {
+  color: #764ba2 !important;
+}
+
+/* 粉紫印章 */
+.seal-frame-purple {
+  border: 4px solid #764ba2 !important;
+  background: linear-gradient(145deg, #ffffff 0%, #f8f0ff 100%) !important;
+}
+
+.seal-frame-purple::before {
+  border: 2px solid rgba(102, 126, 234, 0.4) !important;
+}
+
+.seal-frame-purple::after {
+  background: linear-gradient(145deg, #ffffff 0%, #f8f0ff 100%) !important;
+  color: #667eea !important;
+}
+
+.seal-top-purple {
+  color: #2d1b3d !important;
+  text-shadow: 2px 2px 0 rgba(102, 126, 234, 0.15) !important;
+}
+
+.seal-divider-purple {
+  background: linear-gradient(to right, transparent, #667eea, #764ba2, transparent) !important;
+}
+
+.seal-bottom-purple {
+  color: #764ba2 !important;
+}
+
+/* 粉紫字标 */
+.wordmark-purple .wordmark-main {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+.wordmark-purple .wordmark-main::before,
+.wordmark-purple .wordmark-main::after {
+  color: #f093fb !important;
+  -webkit-text-fill-color: #f093fb !important;
+}
+
+.wordmark-purple .wordmark-line {
+  background: linear-gradient(to right, #667eea, #764ba2, #f093fb) !important;
+}
+
+.wordmark-purple .wordmark-sub {
+  color: #764ba2 !important;
+}
+
+/* ============================================
+   品牌设计展示 - 方案四：朱红 + 藏青
+   ============================================ */
+
+/* 中国传统色彩系统色板 */
+.color-scheme-chinese .color-swatch-preview {
+  border: 2px solid rgba(196, 30, 58, 0.15) !important;
+}
+
+.color-scheme-chinese .color-swatch-name {
+  color: #1e3a5f !important;
+}
+
+.color-scheme-chinese .color-swatch-hex {
+  color: #c41e3a !important;
+}
+
+/* 中国传统风格品牌卡片 */
+.brand-card-scheme-chinese {
+  border: 1px solid rgba(196, 30, 58, 0.2) !important;
+  background: linear-gradient(145deg, #fffdf8 0%, #f5f0e6 100%) !important;
+  box-shadow: 0 4px 20px rgba(196, 30, 58, 0.08) !important;
+}
+
+.brand-card-scheme-chinese .brand-card-header {
+  border-bottom: 2px solid rgba(196, 30, 58, 0.3) !important;
+}
+
+.brand-card-scheme-chinese .brand-card-title {
+  color: #1e3a5f !important;
+}
+
+.brand-card-scheme-chinese .brand-card-tag {
+  background: linear-gradient(135deg, #c41e3a 0%, #8b0000 100%) !important;
+}
+
+.brand-card-scheme-chinese .brand-card-content {
+  background: linear-gradient(135deg, #fffdf8 0%, #faf5eb 100%) !important;
+  border: 1px solid rgba(196, 30, 58, 0.15) !important;
+}
+
+.brand-card-scheme-chinese .brand-card-footer p {
+  color: #1e3a5f !important;
+}
+
+/* 朱红藏青印章 */
+.seal-frame-chinese {
+  border: 4px solid #c41e3a !important;
+  background: linear-gradient(145deg, #fffdf8 0%, #f5f0e6 100%) !important;
+}
+
+.seal-frame-chinese::before {
+  border: 2px solid rgba(196, 30, 58, 0.4) !important;
+}
+
+.seal-frame-chinese::after {
+  background: linear-gradient(145deg, #fffdf8 0%, #f5f0e6 100%) !important;
+  color: #1e3a5f !important;
+}
+
+.seal-top-chinese {
+  color: #1e3a5f !important;
+  text-shadow: 1px 1px 0 rgba(196, 30, 58, 0.1) !important;
+}
+
+.seal-divider-chinese {
+  background: linear-gradient(to right, transparent, #c41e3a, #d4af37, transparent) !important;
+}
+
+.seal-bottom-chinese {
+  color: #1e3a5f !important;
+}
+
+/* 朱红藏青字标 */
+.wordmark-chinese .wordmark-main {
+  color: #c41e3a !important;
+  text-shadow: 2px 2px 0 rgba(196, 30, 58, 0.1) !important;
+}
+
+.wordmark-chinese .wordmark-main::before,
+.wordmark-chinese .wordmark-main::after {
+  color: #1e3a5f !important;
+}
+
+.wordmark-chinese .wordmark-line {
+  background: linear-gradient(to right, #c41e3a, #d4af37, #1e3a5f) !important;
+}
+
+.wordmark-chinese .wordmark-sub {
+  color: #1e3a5f !important;
+}
+
+/* 藏青几何符号 */
+.symbol-icon-chinese {
+  color: #1e3a5f !important;
+}
+
+.symbol-main-chinese {
+  color: #c41e3a !important;
+}
+
+.symbol-sub-chinese {
+  color: #1e3a5f !important;
+}
+
+.symbol-tagline-chinese {
+  color: #d4af37 !important;
+}
+
+/* ============================================
+   方案 K：极简未来（珊瑚红 + 深炭灰）
+   大刀阔斧重新设计 - 极简、力量感、现代
+   ============================================ */
+
+/* 新配色系统 - 极简未来风 */
+:root {
+  --k-coral: #FF6B6B;
+  --k-coral-dark: #E85555;
+  --k-charcoal: #2C3E50;
+  --k-charcoal-light: #34495E;
+  --k-gold: #FFD93D;
+  --k-white: #FFFFFF;
+  --k-off-white: #F8F9FA;
+}
+
+/* 极简未来品牌卡片 */
+.brand-card-scheme-k {
+  border: 2px solid var(--k-charcoal) !important;
+  background: var(--k-white) !important;
+  box-shadow: 8px 8px 0 var(--k-charcoal) !important;
+  contain: layout style paint !important;
+  transition: box-shadow 0.2s ease, transform 0.2s ease !important;
+}
+
+.brand-card-scheme-k:hover {
+  box-shadow: 12px 12px 0 var(--k-coral) !important;
+  transform: translate(-2px, -2px) !important;
+}
+
+.brand-card-scheme-k .brand-card-header {
+  border-bottom: 2px solid var(--k-charcoal) !important;
+  padding: 1rem 1.5rem !important;
+}
+
+.brand-card-scheme-k .brand-card-title {
+  color: var(--k-charcoal) !important;
+  font-family: 'ZCOOL XiaoWei', serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+}
+
+.brand-card-scheme-k .brand-card-tag {
+  background: var(--k-coral) !important;
+  color: var(--k-white) !important;
+  font-weight: 600 !important;
+  padding: 0.3rem 0.8rem !important;
+  border-radius: 0 !important;
+}
+
+.brand-card-scheme-k .brand-card-content-k {
+  background: var(--k-off-white) !important;
+  padding: 3rem 2rem !important;
+  contain: layout style !important;
+}
+
+.brand-card-scheme-k .brand-card-footer {
+  border-top: 2px solid var(--k-charcoal) !important;
+  padding: 1rem 1.5rem !important;
+}
+
+.brand-card-scheme-k .brand-card-footer p {
+  color: var(--k-charcoal-light) !important;
+  font-family: 'Noto Serif SC', serif !important;
+  font-size: 0.9rem !important;
+  margin: 0 !important;
+}
+
+/* K 容器 - 水平布局 */
+.k-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 3rem !important;
+  margin-bottom: 2rem !important;
+}
+
+/* K Logo 符号 - 极简几何 */
+.k-logo {
+  width: 100px !important;
+  height: 100px !important;
+  position: relative !important;
+}
+
+.k-symbol {
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+}
+
+/* K 的竖条 */
+.k-bar {
+  position: absolute !important;
+  background: var(--k-charcoal) !important;
+  border-radius: 2px !important;
+}
+
+.k-bar-1 {
+  width: 8px !important;
+  height: 60px !important;
+  left: 15px !important;
+  top: 20px !important;
+}
+
+.k-bar-2 {
+  width: 20px !important;
+  height: 8px !important;
+  left: 23px !important;
+  top: 36px !important;
+}
+
+.k-bar-3 {
+  width: 20px !important;
+  height: 8px !important;
+  left: 23px !important;
+  top: 56px !important;
+}
+
+/* K 的弧形 - 用伪元素创建 */
+.k-arc {
+  position: absolute !important;
+  width: 35px !important;
+  height: 35px !important;
+  right: 10px !important;
+  top: 32px !important;
+  border: 6px solid var(--k-coral) !important;
+  border-left: none !important;
+  border-radius: 0 20px 20px 0 !important;
+}
+
+/* K 文字区域 */
+.k-text {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+.k-main {
+  font-family: 'Ma Shan Zheng', serif !important;
+  font-size: 4rem !important;
+  color: var(--k-charcoal) !important;
+  line-height: 1 !important;
+  letter-spacing: 0.05em !important;
+}
+
+.k-ai {
+  font-family: 'IBM Plex Sans', sans-serif !important;
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: var(--k-coral) !important;
+  letter-spacing: 0.1em !important;
+  margin-top: 0.2rem !important;
+}
+
+.k-en {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 0.75rem !important;
+  color: var(--k-charcoal-light) !important;
+  letter-spacing: 0.3em !important;
+  text-transform: uppercase !important;
+  margin-top: 0.5rem !important;
+}
+
+/* 强调线 */
+.k-accent-line {
+  width: 100% !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, var(--k-coral) 0%, var(--k-gold) 50%, var(--k-charcoal) 100%) !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* 标语 */
+.k-tagline {
+  font-family: 'Noto Serif SC', serif !important;
+  font-size: 1rem !important;
+  color: var(--k-charcoal-light) !important;
+  letter-spacing: 0.2em !important;
+  text-align: center !important;
+  padding: 0.5rem 1rem !important;
+  border: 2px solid var(--k-charcoal) !important;
+  display: inline-block !important;
+  position: relative !important;
+}
+
+.k-tagline::before {
+  content: '◈' !important;
+  position: absolute !important;
+  left: -12px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  color: var(--k-coral) !important;
+  font-size: 1rem !important;
 }

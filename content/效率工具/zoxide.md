@@ -95,23 +95,30 @@ zq doc
 > zoxide 使用加权评分，综合考虑以下因素：
 
 ```mermaid
-flowchart LR
-    subgraph 评分因素
-        F[频率<br/>访问次数] --> SCORE[总分]
-        R[近期性<br/>最近访问] --> SCORE
-        D[深度<br/>路径深度] --> SCORE
+flowchart TD
+    subgraph Factors [评分因素]
+        F[频率: 访问次数]
+        R[近期性: 最近访问]
+        D[深度: 路径深度]
     end
 
-    subgraph 评分规则
-        direction TB
-        F --> |"次数越多 +分"| F1
-        R --> |"越近访问 +分"| R1
-        D --> |"越深路径 +分"| D1
+    subgraph Rules [评分规则]
+        F1[次数越多分数越高]
+        R1[访问时间越近分数越高]
+        D1[路径越深分数越高]
     end
 
-    SCORE --> |"z doc"| RESULT{匹配结果}
-    RESULT --> |最高分| DOC[/Users/zhangchen/Documents]
-    RESULT --> |次高分| DOCS[/Documents]
+    F --- F1
+    R --- R1
+    D --- D1
+
+    F1 --> SCORE([计算总分])
+    R1 --> SCORE
+    D1 --> SCORE
+
+    SCORE --> RESULT{匹配结果}
+    RESULT --> |最高分| DOC[/Users/zhangchen/Documents/]
+    RESULT --> |次高分| DOCS[/Documents/]
 
     style F fill:#e3f2fd,stroke:#1976d2
     style R fill:#e3f2fd,stroke:#1976d2
