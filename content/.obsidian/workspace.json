@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Playground/品牌设计展示.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "品牌设计展示"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "Playground/品牌设计展示.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "index 的反向链接列表"
+              "title": "品牌设计展示 的反向链接列表"
             }
           },
           {
@@ -186,6 +186,9 @@
   },
   "active": "de370abb6dd26594",
   "lastOpenFiles": [
+    "index.md",
+    "Playground/brand-preview.html",
+    "Playground/品牌设计展示.md",
     "OpenClaw/08-OpenClaw-多Agent架构.md",
     "OpenClaw/07-OpenClaw-微信插件使用指南.md",
     "OpenClaw/06-OpenClaw-飞书插件使用指南.md",
@@ -210,9 +213,6 @@
     "Playground",
     "Labs/字体展示.md",
     "Labs/_index.md",
-    "index.md",
-    "Labs/公众号文章模板.md",
-    "Labs/Excalidraw文档绘图工具.md",
     "Labs",
     "VibeCoding/05-Assets/theme-warm_orange.excalidraw",
     "VibeCoding/05-Assets/theme-vercel.excalidraw",
@@ -221,7 +221,6 @@
     "VibeCoding/05-Assets/theme-spotify.excalidraw",
     "VibeCoding/05-Assets/theme-radiant.excalidraw",
     "VibeCoding/05-Assets/theme-ocean.excalidraw",
-    "VibeCoding/05-Assets/theme-notion.excalidraw",
     "VibeCoding/05-Assets/skills5.jpg",
     "VibeCoding/05-Assets/skills4.jpg",
     "VibeCoding/05-Assets/skills3.jpg",

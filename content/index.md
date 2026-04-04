@@ -1,5 +1,5 @@
 ---
-title: "KnowHowAI"
+title: KnowHowAI
 cssclasses:
   - landing-page
 ---

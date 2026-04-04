@@ -270,3 +270,386 @@ body {
 .difficulty-easy { color: #22c55e !important; }
 .difficulty-medium { color: #f59e0b !important; }
 .difficulty-hard { color: #ef4444 !important; }
+
+/* ============================================
+   品牌设计展示 - 丰富色彩版本
+   ============================================ */
+
+/* 品牌卡片容器 */
+.brand-card {
+  border: 1px solid #e8d5c4 !important;
+  border-radius: 12px !important;
+  padding: 2rem !important;
+  margin: 2rem 0 !important;
+  background: linear-gradient(145deg, #fffdf9 0%, #faf3eb 100%) !important;
+  box-shadow: 0 4px 20px rgba(180, 100, 60, 0.08) !important;
+}
+
+.brand-card-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 1rem !important;
+  margin-bottom: 1.5rem !important;
+  padding-bottom: 1rem !important;
+  border-bottom: 2px solid #e8d5c4 !important;
+}
+
+.brand-card-title {
+  font-family: 'Noto Serif SC', serif !important;
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+  color: #5a3d2b !important;
+}
+
+.brand-card-tag {
+  font-size: 0.75rem !important;
+  padding: 0.25rem 0.75rem !important;
+  background: linear-gradient(135deg, #c4785a 0%, #d4906a 100%) !important;
+  color: white !important;
+  border-radius: 20px !important;
+  font-weight: 500 !important;
+}
+
+.brand-card-content {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 3rem 2rem !important;
+  background: linear-gradient(135deg, #f8f2ec 0%, #efe4d8 100%) !important;
+  border-radius: 8px !important;
+  margin-bottom: 1.5rem !important;
+  border: 1px solid #e8d5c4 !important;
+}
+
+.brand-card-footer p {
+  text-align: center !important;
+  color: #8b7355 !important;
+  font-style: italic !important;
+}
+
+/* 方案 A：印章风格 - 丰富色彩 */
+.brand-seal {
+  display: inline-block !important;
+  position: relative !important;
+}
+
+.seal-frame {
+  border: 4px solid #8b4513 !important;
+  padding: 2.5rem 3.5rem !important;
+  background: linear-gradient(145deg, #fffcf7 0%, #faf0e4 100%) !important;
+  position: relative !important;
+}
+
+.seal-frame::before {
+  content: '' !important;
+  position: absolute !important;
+  inset: 8px !important;
+  border: 2px solid #c4785a !important;
+  pointer-events: none !important;
+}
+
+.seal-frame::after {
+  content: '◈' !important;
+  position: absolute !important;
+  top: -0.8em !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background: #faf0e4 !important;
+  padding: 0 0.5rem !important;
+  color: #c4785a !important;
+  font-size: 1.2rem !important;
+}
+
+.seal-top {
+  font-family: 'Noto Serif SC', serif !important;
+  font-size: 2.8rem !important;
+  font-weight: 900 !important;
+  color: #5a3d2b !important;
+  letter-spacing: 0.25em !important;
+  text-align: center !important;
+  text-shadow: 1px 1px 0 rgba(180, 100, 60, 0.1) !important;
+}
+
+.seal-divider {
+  width: 85% !important;
+  height: 3px !important;
+  background: linear-gradient(to right, transparent, #c4785a, #d4906a, transparent) !important;
+  margin: 1rem auto !important;
+}
+
+.seal-bottom {
+  font-family: 'IBM Plex Serif', serif !important;
+  font-size: 1.1rem !important;
+  color: #8b7355 !important;
+  letter-spacing: 0.25em !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+}
+
+/* 方案 B：字标为主 - 丰富色彩 */
+.brand-wordmark {
+  text-align: center !important;
+}
+
+.wordmark-main {
+  font-family: 'Noto Serif SC', serif !important;
+  font-size: 5.5rem !important;
+  font-weight: 900 !important;
+  color: #5a3d2b !important;
+  line-height: 1 !important;
+  letter-spacing: 0.08em !important;
+  position: relative !important;
+  display: inline-block !important;
+}
+
+.wordmark-main::before,
+.wordmark-main::after {
+  content: '◆' !important;
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  color: #c4785a !important;
+  font-size: 1rem !important;
+  opacity: 0.7 !important;
+}
+
+.wordmark-main::before { left: -1.5em !important; }
+.wordmark-main::after { right: -1.5em !important; }
+
+.wordmark-line {
+  width: 140px !important;
+  height: 4px !important;
+  background: linear-gradient(to right, #c4785a, #d4906a, #e8a878) !important;
+  margin: 1.5rem auto !important;
+  border-radius: 2px !important;
+}
+
+.wordmark-sub {
+  font-family: 'IBM Plex Serif', serif !important;
+  font-size: 1.3rem !important;
+  color: #8b7355 !important;
+  letter-spacing: 0.35em !important;
+  text-transform: uppercase !important;
+}
+
+/* 方案 C：几何符号 + 字标 - 丰富色彩 */
+.brand-symbol {
+  width: 100% !important;
+  max-width: 500px !important;
+  margin: 0 auto !important;
+}
+
+.symbol-layout {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 2.5rem !important;
+}
+
+.symbol-icon {
+  font-size: 4.5rem !important;
+  color: #c4785a !important;
+  line-height: 1 !important;
+  text-shadow: 2px 2px 4px rgba(180, 100, 60, 0.2) !important;
+  animation: symbol-pulse 3s ease-in-out infinite !important;
+}
+
+@keyframes symbol-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.85; }
+}
+
+.symbol-text {
+  text-align: left !important;
+}
+
+.symbol-main {
+  font-family: 'Noto Serif SC', serif !important;
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+  color: #5a3d2b !important;
+  letter-spacing: 0.12em !important;
+  line-height: 1.2 !important;
+}
+
+.symbol-sub {
+  font-family: 'IBM Plex Serif', serif !important;
+  font-size: 1rem !important;
+  color: #8b7355 !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  margin-top: 0.4rem !important;
+}
+
+.symbol-divider {
+  width: 100% !important;
+  height: 2px !important;
+  background: linear-gradient(to right, transparent, #e8d5c4, transparent) !important;
+  margin: 1.5rem 0 !important;
+}
+
+.symbol-tagline {
+  font-family: 'Noto Serif SC', serif !important;
+  font-size: 1.15rem !important;
+  color: #c4785a !important;
+  letter-spacing: 0.25em !important;
+  text-align: center !important;
+}
+
+/* 方案 D：徽章风格 - 丰富色彩 */
+.brand-badge {
+  display: inline-block !important;
+}
+
+.badge-outer {
+  border: 3px solid #5a3d2b !important;
+  padding: 4px !important;
+  border-radius: 6px !important;
+  background: linear-gradient(145deg, #5a3d2b 0%, #7a5a3d 100%) !important;
+  box-shadow: 0 4px 16px rgba(90, 61, 43, 0.25) !important;
+}
+
+.badge-inner {
+  background: linear-gradient(145deg, #fffdf9 0%, #faf0e4 100%) !important;
+  padding: 2.5rem 3.5rem !important;
+  border: 1px solid #e8d5c4 !important;
+  text-align: center !important;
+  position: relative !important;
+}
+
+.badge-inner::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 12px !important;
+  left: 12px !important;
+  right: 12px !important;
+  bottom: 12px !important;
+  border: 1px dashed #e8d5c4 !important;
+  pointer-events: none !important;
+}
+
+.badge-top {
+  font-size: 2rem !important;
+  color: #c4785a !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.badge-main {
+  font-family: 'Noto Serif SC', serif !important;
+  font-size: 2.2rem !important;
+  font-weight: 900 !important;
+  color: #5a3d2b !important;
+  letter-spacing: 0.2em !important;
+}
+
+.badge-line {
+  width: 70% !important;
+  height: 2px !important;
+  background: linear-gradient(to right, transparent, #c4785a, transparent) !important;
+  margin: 0.8rem auto !important;
+}
+
+.badge-sub {
+  font-family: 'IBM Plex Serif', serif !important;
+  font-size: 0.9rem !important;
+  color: #8b7355 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+}
+
+.badge-tag {
+  margin-top: 1.2rem !important;
+  font-size: 0.8rem !important;
+  color: #fffdf9 !important;
+  letter-spacing: 0.1em !important;
+  padding: 0.4rem 1rem !important;
+  background: linear-gradient(135deg, #c4785a 0%, #d4906a 100%) !important;
+  border-radius: 4px !important;
+  display: inline-block !important;
+}
+
+/* 品牌故事 */
+.brand-story {
+  background: linear-gradient(145deg, #f8f2ec 0%, #efe4d8 100%) !important;
+  padding: 2rem !important;
+  border-radius: 12px !important;
+  margin-top: 2rem !important;
+  border: 1px solid #e8d5c4 !important;
+}
+
+.brand-story h3 {
+  font-family: 'Noto Serif SC', serif !important;
+  font-size: 1.2rem !important;
+  color: #5a3d2b !important;
+  margin-bottom: 1rem !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 2px solid #c4785a !important;
+}
+
+.brand-story ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.brand-story li {
+  padding: 0.6rem 0 !important;
+  padding-left: 1.8rem !important;
+  position: relative !important;
+  color: #6b5a47 !important;
+}
+
+.brand-story li::before {
+  content: '◈' !important;
+  position: absolute !important;
+  left: 0 !important;
+  color: #c4785a !important;
+  font-size: 0.9rem !important;
+}
+
+.brand-story strong {
+  color: #5a3d2b !important;
+  font-weight: 700 !important;
+}
+
+.brand-story-desc {
+  margin-top: 1rem !important;
+  color: #8b7355 !important;
+  font-style: italic !important;
+}
+
+/* 色彩系统说明 */
+.color-palette {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) !important;
+  gap: 1rem !important;
+  margin: 1.5rem 0 !important;
+}
+
+.color-swatch {
+  text-align: center !important;
+  padding: 1rem !important;
+  background: white !important;
+  border-radius: 8px !important;
+  border: 1px solid #e8d5c4 !important;
+}
+
+.color-swatch-preview {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50% !important;
+  margin: 0 auto 0.5rem !important;
+  border: 2px solid rgba(0,0,0,0.05) !important;
+}
+
+.color-swatch-name {
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  color: #5a3d2b !important;
+}
+
+.color-swatch-hex {
+  font-size: 0.75rem !important;
+  color: #8b7355 !important;
+  font-family: 'IBM Plex Mono', monospace !important;
+}

@@ -19,6 +19,7 @@ title: VibeCoding
 | [05-Subagent协作模式](05-Subagent协作模式) | 多 Agent 协作解决复杂开发任务 | ⭐⭐⭐ |
 | [06-The-Agency-AI专家团队](06-The-Agency-AI专家团队) | 147 个 AI Agent 开源宝库（53K Stars） | ⭐⭐ |
 | [07-CLI-Anything-让软件具有Agent原生能力](07-CLI-Anything-让软件具有Agent原生能力) | 将任意软件转化为 AI 可控 CLI | ⭐⭐ |
+| [08-impeccable-风格化前端设计技能](08-impeccable-风格化前端设计技能) | 17 个命令驱动的 AI 设计技能系统 | ⭐⭐ |
 
 ---
 
