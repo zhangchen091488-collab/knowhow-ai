@@ -70,15 +70,15 @@ Cursor 核心功能和使用技巧的系统化总结。
   <div class="topic-card">
     <h4>📘 基础篇</h4>
     <ul>
-      <li><a href="VibeCoding/Cursor入门.html">快速上手 Cursor</a></li>
+      <li><a href="VibeCoding/01-Cursor入门">快速上手 Cursor</a></li>
     </ul>
   </div>
   <div class="topic-card">
     <h4>📗 进阶篇</h4>
     <ul>
-      <li><a href="VibeCoding/Skills深度探索.html">Skills 深度探索</a></li>
-      <li><a href="VibeCoding/Subagent协作模式.html">Subagent 协作</a></li>
-      <li><a href="VibeCoding/如何写好Skill-完整指南.html">Skill 编写指南</a></li>
+      <li><a href="VibeCoding/02-Skills深度探索">Skills 深度探索</a></li>
+      <li><a href="VibeCoding/03-如何写好Skill-完整指南">Skill 编写指南</a></li>
+      <li><a href="VibeCoding/04-渐进式揭示-Skill设计的艺术与科学">渐进式揭示</a></li>
     </ul>
   </div>
   <div class="topic-card">
@@ -107,23 +107,23 @@ OpenClaw 自托管网关的完整指南。
   <div class="topic-card">
     <h4>🚀 快速开始</h4>
     <ul>
-      <li><a href="OpenClaw/OpenClaw 快速入门">4 步快速安装</a></li>
-      <li><a href="OpenClaw/OpenClaw 安装方法">详细安装方式</a></li>
+      <li><a href="OpenClaw/01-OpenClaw-快速入门">4 步快速安装</a></li>
+      <li><a href="OpenClaw/02-OpenClaw-安装方法">详细安装方式</a></li>
     </ul>
   </div>
   <div class="topic-card">
     <h4>⚙️ 配置指南</h4>
     <ul>
-      <li><a href="OpenClaw/OpenClaw 配置指南">配置文件详解</a></li>
-      <li><a href="OpenClaw/OpenClaw CLI 参考">CLI 工具参考</a></li>
+      <li><a href="OpenClaw/03-OpenClaw-配置指南">配置文件详解</a></li>
+      <li><a href="OpenClaw/04-OpenClaw-CLI-参考">CLI 工具参考</a></li>
     </ul>
   </div>
   <div class="topic-card">
     <h4>🔧 进阶使用</h4>
     <ul>
-      <li><a href="OpenClaw/OpenClaw 架构概念">架构说明</a></li>
-      <li><a href="OpenClaw/OpenClaw 飞书插件使用指南">飞书集成</a></li>
-      <li><a href="OpenClaw/OpenClaw 微信插件使用指南">微信集成</a></li>
+      <li><a href="OpenClaw/05-OpenClaw-架构概念">架构说明</a></li>
+      <li><a href="OpenClaw/06-OpenClaw-飞书插件使用指南">飞书集成</a></li>
+      <li><a href="OpenClaw/07-OpenClaw-微信插件使用指南">微信集成</a></li>
     </ul>
   </div>
 </div>

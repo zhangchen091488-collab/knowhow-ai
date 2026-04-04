@@ -1,5 +1,5 @@
 ---
-title: "05-🏗️OpenClaw 架构概念"
+title: "05-OpenClaw-架构概念"
 ---
 
 # 🏗️ OpenClaw 架构概念

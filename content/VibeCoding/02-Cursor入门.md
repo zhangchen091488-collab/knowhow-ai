@@ -1,5 +1,5 @@
 ---
-title: "01-🫡Cursor入门"
+title: "01-Cursor入门"
 ---
 
 # Cursor入门

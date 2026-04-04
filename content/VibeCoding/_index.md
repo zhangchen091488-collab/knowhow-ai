@@ -12,13 +12,13 @@ title: VibeCoding
 
 | 文档 | 说明 | 难度 |
 |------|------|:----:|
-| [Cursor入门](Cursor入门) | AI 代码编辑器核心理念与基础操作 | ⭐ |
-| [Skills深度探索](Skills深度探索) | Skills 体系架构与可复用 AI 能力 | ⭐⭐ |
-| [如何写好Skill-完整指南](如何写好Skill-完整指南) | 从零构建专业 Skill 的完整方法论 | ⭐⭐⭐ |
-| [渐进式揭示-Skill设计的艺术与科学](渐进式揭示-Skill设计的艺术与科学) | 渐进式揭示设计哲学与实战技巧 | ⭐⭐⭐ |
-| [Subagent协作模式](Subagent协作模式) | 多 Agent 协作解决复杂开发任务 | ⭐⭐⭐ |
-| [The-Agency-AI专家团队](The-Agency-AI专家团队) | 147 个 AI Agent 开源宝库（53K Stars） | ⭐⭐ |
-| [CLI-Anything-让软件具有Agent原生能力](CLI-Anything-让软件具有Agent原生能力) | 将任意软件转化为 AI 可控 CLI | ⭐⭐ |
+| [01-Cursor入门](01-Cursor入门) | AI 代码编辑器核心理念与基础操作 | ⭐ |
+| [02-Skills深度探索](02-Skills深度探索) | Skills 体系架构与可复用 AI 能力 | ⭐⭐ |
+| [03-如何写好Skill-完整指南](03-如何写好Skill-完整指南) | 从零构建专业 Skill 的完整方法论 | ⭐⭐⭐ |
+| [04-渐进式揭示-Skill设计的艺术与科学](04-渐进式揭示-Skill设计的艺术与科学) | 渐进式揭示设计哲学与实战技巧 | ⭐⭐⭐ |
+| [05-Subagent协作模式](05-Subagent协作模式) | 多 Agent 协作解决复杂开发任务 | ⭐⭐⭐ |
+| [06-The-Agency-AI专家团队](06-The-Agency-AI专家团队) | 147 个 AI Agent 开源宝库（53K Stars） | ⭐⭐ |
+| [07-CLI-Anything-让软件具有Agent原生能力](07-CLI-Anything-让软件具有Agent原生能力) | 将任意软件转化为 AI 可控 CLI | ⭐⭐ |
 
 ---
 
@@ -42,8 +42,8 @@ Cursor 是一个基于 VSCode 的 AI 代码编辑器，核心理念是"AI 不是
 |------|------|------|
 | **Rule** | 全局 AI 行为约束 | 入门即掌握 |
 | **Command** | 快捷指令 | 入门即掌握 |
-| **Skills** | 可复用 AI 能力模块 | [[Skills深度探索]] |
-| **Subagent** | 多 Agent 协作 | [[Subagent协作模式]] |
+| **Skills** | 可复用 AI 能力模块 | [[02-Skills深度探索]] |
+| **Subagent** | 多 Agent 协作 | [[05-Subagent协作模式]] |
 
 ### 第三步：实践进阶
 
@@ -73,20 +73,20 @@ Week 4+: 专家 — Skills 和 Subagent 处理复杂场景
 ## 📖 内容分类
 
 ### 🆕 入门系列
-- [[Cursor入门]] — AI 编程理念与基础操作
+- [[01-Cursor入门]] — AI 编程理念与基础操作
 
 ### ⚙️ 进阶系列
-- [[Skills深度探索]] — 可复用 AI 能力的体系架构
-- [[如何写好Skill-完整指南]] — 构建专业 Skill 的完整指南
-- [[渐进式揭示-Skill设计的艺术与科学]] — 渐进式设计原则
+- [[02-Skills深度探索]] — 可复用 AI 能力的体系架构
+- [[03-如何写好Skill-完整指南]] — 构建专业 Skill 的完整指南
+- [[04-渐进式揭示-Skill设计的艺术与科学]] — 渐进式设计原则
 
 ### 🤖 Agent 系列
-- [[Subagent协作模式]] — 多专家协作工作流
-- [[The-Agency-AI专家团队]] — 147 个开源 AI Agent
-- [[CLI-Anything-让软件具有Agent原生能力]] — 软件 Agent 化
+- [[05-Subagent协作模式]] — 多专家协作工作流
+- [[06-The-Agency-AI专家团队]] — 147 个开源 AI Agent
+- [[07-CLI-Anything-让软件具有Agent原生能力]] — 软件 Agent 化
 
 ### 🎨 实战系列
-- 这些文档已移至 [[Labs]] 分栏
+- 这些文档已移至 [[Playground]] 分栏
 
 ---
 

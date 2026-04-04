@@ -1,5 +1,5 @@
 ---
-title: "08-🤖OpenClaw 多 Agent 架构"
+title: "08-OpenClaw-多Agent架构"
 ---
 
 # OpenClaw 多 Agent 架构

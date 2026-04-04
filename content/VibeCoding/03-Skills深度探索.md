@@ -1,5 +1,5 @@
 ---
-title: "02-🔧Skills深度探索"
+title: "02-Skills深度探索"
 ---
 
 # Skills深度探索

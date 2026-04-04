@@ -1,5 +1,5 @@
 ---
-title: "02-📦OpenClaw 安装方法"
+title: "02-OpenClaw-安装方法"
 ---
 
 # 📦 OpenClaw 安装方法

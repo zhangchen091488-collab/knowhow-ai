@@ -1,5 +1,5 @@
 ---
-title: "04-🎓渐进式揭示"
+title: "06-渐进式揭示-Skill设计的艺术与科学"
 ---
 
 # 渐进式揭示（Progressive Disclosure）：Skill设计的艺术与科学

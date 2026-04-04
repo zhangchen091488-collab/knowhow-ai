@@ -1,5 +1,5 @@
 ---
-title: "03-⚙️OpenClaw 配置指南"
+title: "03-OpenClaw-配置指南"
 ---
 
 # ⚙️ OpenClaw 配置指南

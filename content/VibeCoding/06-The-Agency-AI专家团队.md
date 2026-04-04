@@ -1,5 +1,5 @@
 ---
-title: "06-🎭The Agency: AI 专家团队"
+title: "05-The-Agency-AI专家团队"
 tags: [AI Agent, Claude Code, Cursor, 开源项目, 工具推荐]
 ---
 

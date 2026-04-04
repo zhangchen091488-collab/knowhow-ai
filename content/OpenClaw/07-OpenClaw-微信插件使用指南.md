@@ -1,5 +1,5 @@
 ---
-title: "07-💬OpenClaw 微信插件使用指南"
+title: "07-OpenClaw-微信插件使用指南"
 ---
 
 # OpenClaw 微信插件使用指南
