@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "效率工具/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "效率工具/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "index 的反向链接列表"
+              "title": "_index 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "效率工具/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "index 的出链列表"
+              "title": "_index 的出链列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "效率工具/_index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "index 的大纲"
+              "title": "_index 的大纲"
             }
           }
         ]
@@ -186,14 +186,19 @@
   },
   "active": "de370abb6dd26594",
   "lastOpenFiles": [
+    "效率工具/04-📦前端包管理工具.md",
+    "效率工具/05-🦆yazi终端文件管理器.md",
+    "效率工具/06-🛠️命令行增强工具.md",
+    "效率工具/carbonyl.md",
+    "效率工具/tunnelto.md",
+    "效率工具/zoxide.md",
+    "index.md",
     "Assets/welcome_warn.png",
     "Assets/welcom_warn.png",
     "Assets/生成指定配色的图片.png",
     "Playground/05-✍️字体展示.md",
-    "index.md",
     "Playground/02-🌱数字花园搭建指南.md",
     "Playground/06-💎品牌设计展示.md",
-    "效率工具/zoxide.md",
     "VibeCoding/07-CLI-Anything-让软件具有Agent原生能力.md",
     "VibeCoding/08-impeccable-风格化前端设计技能.md",
     "VibeCoding/06-The-Agency-AI专家团队.md",
@@ -211,10 +216,6 @@
     "OpenClaw/07-OpenClaw-微信插件使用指南.md",
     "OpenClaw/06-OpenClaw-飞书插件使用指南.md",
     "OpenClaw/05-OpenClaw-架构概念.md",
-    "OpenClaw/04-OpenClaw-CLI-参考.md",
-    "OpenClaw/03-OpenClaw-配置指南.md",
-    "OpenClaw/02-OpenClaw-安装方法.md",
-    "OpenClaw/01-OpenClaw-快速入门.md",
     "Playground/brand-preview.html",
     "Playground",
     "Labs",
@@ -230,7 +231,6 @@
     "VibeCoding/05-Assets/skills2.jpg",
     "VibeCoding/05-Assets/skills1.jpg",
     "Assets/welcome.png",
-    "Assets/test-export.png",
-    "Assets/skills5.jpg"
+    "Assets/test-export.png"
   ]
 }
